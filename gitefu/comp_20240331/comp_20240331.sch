@@ -191,7 +191,7 @@ N 70 -390 70 -280 {
 lab=VDD}
 N 680 -390 680 -380 {
 lab=VDD}
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 160 -70 0 0 {name=M1
+C {symbols/nfet_03v3.sym} 160 -70 0 0 {name=M1
 L=0.28u
 W=2.80u
 nf=1
@@ -205,7 +205,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 50 -150 0 0 {name=M2
+C {symbols/nfet_03v3.sym} 50 -150 0 0 {name=M2
 L=0.28u
 W=2.80u
 nf=1
@@ -219,7 +219,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 50 -250 0 0 {name=M4
+C {symbols/pfet_03v3.sym} 50 -250 0 0 {name=M4
 L=0.28u
 W=2.80u
 nf=1
@@ -233,7 +233,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 660 -350 0 0 {name=M6
+C {symbols/pfet_03v3.sym} 660 -350 0 0 {name=M6
 L=0.28u
 W=2.80u
 nf=1
@@ -247,7 +247,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 700 -260 0 1 {name=M7
+C {symbols/pfet_03v3.sym} 700 -260 0 1 {name=M7
 L=0.28u
 W=2.80u
 nf=1
@@ -261,7 +261,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 450 -280 0 0 {name=M8
+C {symbols/nfet_03v3.sym} 450 -280 0 0 {name=M8
 L=0.28u
 W=2.80u
 nf=1
@@ -275,7 +275,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 450 -150 0 0 {name=M9
+C {symbols/nfet_03v3.sym} 450 -150 0 0 {name=M9
 L=0.28u
 W=2.80u
 nf=1
@@ -289,7 +289,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 700 -150 0 1 {name=M10
+C {symbols/nfet_03v3.sym} 700 -150 0 1 {name=M10
 L=0.28u
 W=2.80u
 nf=1
@@ -303,7 +303,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 310 -150 0 1 {name=M3
+C {symbols/nfet_03v3.sym} 310 -150 0 1 {name=M3
 L=0.28u
 W=2.80u
 nf=1
@@ -317,7 +317,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 310 -250 0 1 {name=M5
+C {symbols/pfet_03v3.sym} 310 -250 0 1 {name=M5
 L=0.28u
 W=2.80u
 nf=1
@@ -331,7 +331,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 920 -350 0 1 {name=M11
+C {symbols/pfet_03v3.sym} 920 -350 0 1 {name=M11
 L=0.28u
 W=2.80u
 nf=1
@@ -345,7 +345,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} 880 -260 0 0 {name=M12
+C {symbols/pfet_03v3.sym} 880 -260 0 0 {name=M12
 L=0.28u
 W=2.80u
 nf=1
@@ -359,7 +359,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 1130 -280 0 1 {name=M13
+C {symbols/nfet_03v3.sym} 1130 -280 0 1 {name=M13
 L=0.28u
 W=2.80u
 nf=1
@@ -373,7 +373,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 1130 -150 0 1 {name=M14
+C {symbols/nfet_03v3.sym} 1130 -150 0 1 {name=M14
 L=0.28u
 W=2.80u
 nf=1
@@ -387,7 +387,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_03v3.sym} 880 -150 0 0 {name=M15
+C {symbols/nfet_03v3.sym} 880 -150 0 0 {name=M15
 L=0.28u
 W=2.80u
 nf=1
