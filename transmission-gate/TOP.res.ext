@@ -1,0 +1,23 @@
+scale 1000 1 0.5
+rnode "VDD" 0 0 269 1180 0
+rnode "GND.t0" 0 0 66 280 0
+rnode "GND.t1" 0 0 94 280 0
+rnode "GND.n0" 0 0 174 280 0
+rnode "GND" 0 0 241 273 0
+resist "GND" "GND.n0" 0.00288991
+resist "GND.n0" "GND.t1" 2.16
+resist "GND.n0" "GND.t0" 747.906
+rnode "Vin" 0 0 -832 669 0
+rnode "Vout" 0 0 -1063 730 0
+rnode "Vctrl.t2" 0 0 66 1180 0
+rnode "Vctrl.t0" 0 0 -953 280 0
+rnode "Vctrl.t1" 0 0 66 280 0
+rnode "Vctrl.n0" 0 0 66 656 0
+rnode "Vctrl" 0 0 71 740 0
+resist "Vctrl" "Vctrl.n0" 0.0994737
+resist "Vctrl.n0" "Vctrl.t1" 55.9714
+resist "Vctrl" "Vctrl.t2" 56.0449
+resist "Vctrl.n0" "Vctrl.t0" 60.5047
+device msubckt pfet_03v3 38 900 39 901  "VDD" "Vctrl.t2" 112 0 "m1_n72_480#" 560 72800,1380 "VDD" 560 72800,1380
+device msubckt nfet_03v3 38 0 39 1  "GND.t0" "Vctrl.t1" 112 0 "m1_n72_480#" 560 68320,1364 "GND.t1" 560 68320,1364
+device msubckt nfet_03v3 -981 0 -980 1  "GND" "Vctrl.t0" 112 0 "Vout" 560 68320,1364 "Vin" 560 68320,1364

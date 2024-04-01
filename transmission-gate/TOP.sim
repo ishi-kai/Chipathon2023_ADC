@@ -1,0 +1,32 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x Vctrl Vout Vin GND s=68320,1364 d=68320,1364 l=56 w=560 x=-981 y=0 nfet_03v3
+x Vctrl m1_n72_480# GND GND s=68320,1364 d=68320,1364 l=56 w=560 x=38 y=0 nfet_03v3
+x m1_n72_480# Vout Vin VDD s=72800,1380 d=72800,1380 l=56 w=560 x=-981 y=900 pfet_03v3
+x Vctrl m1_n72_480# VDD VDD s=72800,1380 d=72800,1380 l=56 w=560 x=38 y=900 pfet_03v3
+R Vctrl 335
+= Vctrl nfet_1/a_30_620#
+= Vctrl nfet_0/a_30_620#
+= Vctrl pfet$1_1/a_28_n136#
+R Vin 61
+= Vin nfet_0/a_94_0#
+= Vin pfet$1_0/a_94_0#
+R Vout 61
+= Vout nfet_0/a_n84_0#
+= Vout pfet$1_0/a_n92_0#
+R m1_n72_480# 165
+= m1_n72_480# nfet_1/a_n84_0#
+= m1_n72_480# pfet$1_1/a_n92_0#
+= m1_n72_480# m1_n976_802#
+= m1_n72_480# pfet$1_0/a_28_n136#
+C VDD0 4.1
+R VDD 5957
+= VDD pfet$1_1/w_n230_n138#
+= VDD pfet$1_1/a_94_0#
+= VDD pfet$1_0/w_n230_n138#
+R GND 104
+= GND nfet_1/a_216_0#
+= GND nfet_1/a_94_0#
+= GND nfet_0/a_216_0#
+= GND VSUBS
+= GND pfet$1_1/VSUBS
+= GND pfet$1_0/VSUBS
