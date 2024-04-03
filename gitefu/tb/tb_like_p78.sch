@@ -509,7 +509,7 @@ C {devices/ipin.sym} -40 150 0 0 {name=p6 lab=CLK}
 C {devices/opin.sym} 1210 240 0 0 {name=p10 lab=VOUTP_EXT}
 C {devices/opin.sym} 1210 220 0 0 {name=p11 lab=VOUTN_EXT}
 C {devices/gnd.sym} -40 410 0 0 {name=l4 lab=GND}
-C {/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/gitefu/comp_20240331/comp_20240331.sym} 170 -70 0 0 {name=x1 prefix=TOP}
+C {../comp_20240331/comp_20240331.sym} 170 -70 0 0 {name=x1 prefix=TOP}
 C {devices/capa.sym} 330 -50 0 0 {name=C1
 m=1
 value=10f

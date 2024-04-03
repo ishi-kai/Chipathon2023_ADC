@@ -465,4 +465,4 @@ C {devices/ipin.sym} -40 290 0 0 {name=p7 lab=VIN}
 C {devices/opin.sym} 1120 240 0 0 {name=p10 lab=VOUTP_EXT}
 C {devices/opin.sym} 1120 220 0 0 {name=p11 lab=VOUTN_EXT}
 C {devices/gnd.sym} -40 410 0 0 {name=l4 lab=GND}
-C {/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/gitefu/comp_20240331/comp_20240331.sym} 170 -70 0 0 {name=x1 prefix=TOP}
+C {../comp_20240331/comp_20240331.sym} 170 -70 0 0 {name=x1 prefix=TOP}
