@@ -1,0 +1,8 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP t b
+C0 t b 2.81862f
+C1 t VSUBS 0.58124f
+C2 b VSUBS 1.30866f
+.ends
+
