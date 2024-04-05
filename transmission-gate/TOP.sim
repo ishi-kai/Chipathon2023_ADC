@@ -1,0 +1,12 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x Vctrl a_n991_764# VDD VDD s=72800,1380 d=72800,1380 l=56 w=560 x=38 y=900 pfet_03v3
+x a_n991_764# Vout Vin VDD s=72800,1380 d=72800,1380 l=56 w=560 x=-980 y=900 pfet_03v3
+x Vctrl Vout Vin GND s=68320,1364 d=68320,1364 l=56 w=560 x=-980 y=0 nfet_03v3
+x Vctrl a_n991_764# GND GND s=68320,1364 d=68320,1364 l=56 w=560 x=38 y=0 nfet_03v3
+R Vin 61
+R Vout 61
+R Vctrl 335
+C VDD0 4.1
+R VDD 5957
+R GND 104
+R a_n991_764# 165

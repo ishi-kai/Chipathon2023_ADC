@@ -1,0 +1,42 @@
+scale 1000 1 0.5
+rnode "GND.t2" 0 0 -953 280 0
+rnode "GND.t0" 0 0 66 280 0
+rnode "GND.n0" 0 0 66 280 0
+rnode "GND.t1" 0 0 94 280 0
+rnode "GND.n1" 0 0 174 280 0
+rnode "GND" 0 0 241 273 0
+resist "GND" "GND.n1" 0.00288991
+resist "GND.n1" "GND.t1" 2.16
+resist "GND.n1" "GND.n0" 3.18492
+resist "GND.n0" "GND.t0" 744.722
+resist "GND.n0" "GND.t2" 998.218
+rnode "Vin.t1" 0 0 -925 1180 0
+rnode "Vin.t0" 0 0 -925 280 0
+rnode "Vin" 0 0 -832 669 0
+resist "Vin" "Vin.t0" 2.73419
+resist "Vin" "Vin.t1" 2.90288
+rnode "Vout.t1" 0 0 -981 1180 0
+rnode "Vout.t0" 0 0 -981 280 0
+rnode "Vout" 0 0 -1063 730 0
+resist "Vout" "Vout.t1" 2.78354
+resist "Vout" "Vout.t0" 2.85354
+rnode "VDD.t2" 0 0 -953 1180 0
+rnode "VDD.t1" 0 0 94 1180 0
+rnode "VDD.t0" 0 0 66 1180 0
+rnode "VDD" 0 0 269 1180 0
+resist "VDD" "VDD.t1" 2.09
+resist "VDD" "VDD.t0" 311.132
+resist "VDD" "VDD.t2" 322.051
+rnode "Vctrl.t0" 0 0 66 1180 0
+rnode "Vctrl.t1" 0 0 -953 280 0
+rnode "Vctrl.t2" 0 0 66 280 0
+rnode "Vctrl.n0" 0 0 66 656 0
+rnode "Vctrl" 0 0 71 740 0
+resist "Vctrl" "Vctrl.n0" 0.0994737
+resist "Vctrl.n0" "Vctrl.t2" 55.9714
+resist "Vctrl" "Vctrl.t0" 56.0449
+resist "Vctrl.n0" "Vctrl.t1" 60.5047
+device msubckt nfet_03v3 38 0 39 1  "GND.t0" "Vctrl.t2" 112 0 "a_n991_764#" 560 68320,1364 "GND.t1" 560 68320,1364
+device msubckt nfet_03v3 -981 0 -980 1  "GND.t2" "Vctrl.t1" 112 0 "Vout.t0" 560 68320,1364 "Vin.t0" 560 68320,1364
+device msubckt pfet_03v3 -981 900 -980 901  "VDD.t2" "a_n991_764#" 112 0 "Vout.t1" 560 72800,1380 "Vin.t1" 560 72800,1380
+device msubckt pfet_03v3 38 900 39 901  "VDD.t0" "Vctrl.t0" 112 0 "a_n991_764#" 560 72800,1380 "VDD.t1" 560 72800,1380
