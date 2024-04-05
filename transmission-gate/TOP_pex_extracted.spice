@@ -1,48 +1,40 @@
 * NGSPICE file created from TOP.ext - technology: gf180mcuD
 
-.subckt nfet a_216_0 a_n84_0 a_94_0 a_30_620
-X0 a_94_0 a_30_620 a_n84_0 a_216_0 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
-C0 a_n84_0 a_94_0 0.165958f
-C1 a_30_620 a_n84_0 0.019538f
-C2 a_30_620 a_94_0 0.019538f
-C3 a_94_0 a_216_0 0.390769f
-C4 a_n84_0 a_216_0 0.122563f
-C5 a_30_620 a_216_0 0.245509f
-.ends
-
-.subckt pfet$1 a_28_n136 a_n92_0 a_94_0 w_n230_n138 VSUBS
-X0 a_94_0 a_28_n136 a_n92_0 w_n230_n138 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
-C0 a_28_n136 a_n92_0 0.019294f
-C1 w_n230_n138 a_28_n136 0.143541f
-C2 a_28_n136 a_94_0 0.019294f
-C3 w_n230_n138 a_n92_0 0.030103f
-C4 a_n92_0 a_94_0 0.158457f
-C5 w_n230_n138 a_94_0 0.347768f
-C6 a_94_0 VSUBS 0.020884f
-C7 a_n92_0 VSUBS 0.091748f
-C8 a_28_n136 VSUBS 0.107314f
-C9 w_n230_n138 VSUBS 1.92682f
-.ends
-
 .subckt TOP VDD GND Vout Vin Vctrl
-Xnfet_0 GND Vout Vin Vctrl nfet
-Xnfet_1 GND m1_n72_480 GND Vctrl nfet
-Xpfet$1_0 m1_n72_480 Vout Vin VDD GND pfet$1
-Xpfet$1_1 Vctrl m1_n72_480 VDD VDD GND pfet$1
-C0 VDD m1_n72_480 0.303952f
-C1 Vout Vctrl 0.674273f
-C2 Vout Vin -0.307332f
-C3 m1_n72_480 Vctrl 0.984388f
-C4 m1_n72_480 Vin 0.681179f
-C5 m1_n72_480 Vout 0.625234f
-C6 VDD Vctrl 0.018047f
-C7 VDD Vin 0.03091f
-C8 VDD Vout 0.0175f
-C9 Vin Vctrl 0.768784f
-C10 Vctrl GND 1.53662f
-C11 Vin GND 0.428795f
-C12 Vout GND 0.280843f
-C13 m1_n72_480 GND 0.441193f
-C14 VDD GND 4.089155f
+X0 VDD.t1 Vctrl.t0 a_n991_764 VDD.t0 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X1 Vin.t1 a_n991_764 Vout.t1 VDD.t2 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X2 Vin.t0 Vctrl.t1 Vout.t0 GND.t2 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+X3 GND.t1 Vctrl.t2 a_n991_764 GND.t0 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+R0 Vctrl.n0 Vctrl.t1 60.5052
+R1 Vctrl Vctrl.t0 56.0454
+R2 Vctrl.n0 Vctrl.t2 55.9719
+R3 Vctrl Vctrl.n0 0.0999737
+R4 VDD VDD.t2 322.051
+R5 VDD VDD.t0 311.132
+R6 VDD VDD.t1 2.0905
+R7 Vout Vout.t0 2.85404
+R8 Vout Vout.t1 2.78404
+R9 Vin Vin.t1 2.90338
+R10 Vin Vin.t0 2.73469
+R11 GND.n0 GND.t2 998.218
+R12 GND.n0 GND.t0 744.722
+R13 GND.n1 GND.n0 3.18542
+R14 GND.n1 GND.t1 2.1605
+R15 GND GND.n1 0.00338991
+C0 Vin Vctrl 0.788322f
+C1 a_n991_764 Vctrl 1.02322f
+C2 Vin a_n991_764 0.700473f
+C3 VDD Vout 0.047602f
+C4 Vctrl Vout 0.69381f
+C5 Vin Vout 0.017083f
+C6 VDD Vctrl 0.180882f
+C7 Vin VDD 0.378679f
+C8 a_n991_764 Vout 0.644528f
+C9 a_n991_764 VDD 0.636054f
+C10 Vin GND 0.428795f
+C11 Vout GND 0.280843f
+C12 Vctrl GND 1.55616f
+C13 VDD GND 4.08916f
+C14 a_n991_764 GND 0.607152f
 .ends
 

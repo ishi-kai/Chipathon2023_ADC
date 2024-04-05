@@ -82,7 +82,7 @@ C {devices/simulator_commands_shown.sym} 20 0 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.include ~/TOP_pex_extracted.spice
+.include ~/Chipathon2023_ADC/transmission-gate/TOP_pex_extracted.spice
 .control
 save all
 dc V2 0 3.3 0.05
