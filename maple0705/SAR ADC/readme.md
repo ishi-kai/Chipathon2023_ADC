@@ -18,6 +18,7 @@
   - 容量アレイ  
     https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
   - ラッチ  
-    https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/latch
+    https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/latch  
+    https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/inverter
   - コンパレータ  
     https://github.com/ishi-kai/Chipathon2023_ADC/tree/creating-a-comparator-for-ADC/gitefu/comp_20240331
