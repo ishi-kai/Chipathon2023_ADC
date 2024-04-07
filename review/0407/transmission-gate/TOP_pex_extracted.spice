@@ -1,0 +1,40 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP VDD GND Vout Vin Vctrl
+X0 VDD.t1 Vctrl.t0 a_n991_764 VDD.t0 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X1 Vin.t1 a_n991_764 Vout.t1 VDD.t2 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X2 Vin.t0 Vctrl.t1 Vout.t0 GND.t2 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+X3 GND.t1 Vctrl.t2 a_n991_764 GND.t0 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+R0 Vctrl.n0 Vctrl.t1 60.5052
+R1 Vctrl Vctrl.t0 56.0454
+R2 Vctrl.n0 Vctrl.t2 55.9719
+R3 Vctrl Vctrl.n0 0.0999737
+R4 VDD VDD.t2 322.051
+R5 VDD VDD.t0 311.132
+R6 VDD VDD.t1 2.0905
+R7 Vout Vout.t0 2.85404
+R8 Vout Vout.t1 2.78404
+R9 Vin Vin.t1 2.90338
+R10 Vin Vin.t0 2.73469
+R11 GND.n0 GND.t2 998.218
+R12 GND.n0 GND.t0 744.722
+R13 GND.n1 GND.n0 3.18542
+R14 GND.n1 GND.t1 2.1605
+R15 GND GND.n1 0.00338991
+C0 Vin Vctrl 0.788322f
+C1 a_n991_764 Vctrl 1.02322f
+C2 Vin a_n991_764 0.700473f
+C3 VDD Vout 0.047602f
+C4 Vctrl Vout 0.69381f
+C5 Vin Vout 0.017083f
+C6 VDD Vctrl 0.180882f
+C7 Vin VDD 0.378679f
+C8 a_n991_764 Vout 0.644528f
+C9 a_n991_764 VDD 0.636054f
+C10 Vin GND 0.428795f
+C11 Vout GND 0.280843f
+C12 Vctrl GND 1.55616f
+C13 VDD GND 4.08916f
+C14 a_n991_764 GND 0.607152f
+.ends
+
