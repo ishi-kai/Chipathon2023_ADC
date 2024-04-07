@@ -48,7 +48,7 @@ vr R 0 pulse(0 3.3 0n 1p 1p 10n 20n)
 vs S 0 pulse(0 3.3 0n 1p 1p 20n 40n)
 .control
 save all
-tran 100ps 40ns 
+tran 100ps 80ns 
 plot v(R) v(S) v(Q)
 write latch.raw
 .endc
