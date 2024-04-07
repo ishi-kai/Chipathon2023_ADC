@@ -1,0 +1,48 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt nfet a_216_0# a_n84_0# a_94_0# a_30_620#
+X0 a_94_0# a_30_620# a_n84_0# a_216_0# nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+C0 a_94_0# a_n84_0# 0.165958f
+C1 a_30_620# a_n84_0# 0.019538f
+C2 a_94_0# a_30_620# 0.019538f
+C3 a_94_0# a_216_0# 0.390769f
+C4 a_n84_0# a_216_0# 0.122563f
+C5 a_30_620# a_216_0# 0.245509f
+.ends
+
+.subckt pfet$1 a_28_n136# a_n92_0# a_94_0# w_n230_n138# VSUBS
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+C0 a_28_n136# a_94_0# 0.019294f
+C1 a_n92_0# a_28_n136# 0.019294f
+C2 a_n92_0# a_94_0# 0.158457f
+C3 w_n230_n138# a_28_n136# 0.143541f
+C4 w_n230_n138# a_94_0# 0.347768f
+C5 a_n92_0# w_n230_n138# 0.030103f
+C6 a_94_0# VSUBS 0.020884f
+C7 a_n92_0# VSUBS 0.091748f
+C8 a_28_n136# VSUBS 0.107314f
+C9 w_n230_n138# VSUBS 1.92682f
+.ends
+
+.subckt TOP VDD GND Vout Vin Vctrl
+Xnfet_0 GND Vout Vin Vctrl nfet
+Xnfet_1 GND m1_n72_480# GND Vctrl nfet
+Xpfet$1_0 m1_n72_480# Vout Vin VDD GND pfet$1
+Xpfet$1_1 Vctrl m1_n72_480# VDD VDD GND pfet$1
+C0 Vctrl Vin 0.768784f
+C1 VDD Vout 0.0175f
+C2 m1_n72_480# VDD 0.303952f
+C3 Vctrl Vout 0.674273f
+C4 m1_n72_480# Vctrl 0.984388f
+C5 VDD Vctrl 0.018047f
+C6 Vout Vin -0.307332f
+C7 m1_n72_480# Vin 0.681179f
+C8 m1_n72_480# Vout 0.625234f
+C9 VDD Vin 0.03091f
+C10 Vctrl GND 1.53662f
+C11 Vin GND 0.428795f
+C12 Vout GND 0.280843f
+C13 m1_n72_480# GND 0.441193f
+C14 VDD GND 4.089155f
+.ends
+

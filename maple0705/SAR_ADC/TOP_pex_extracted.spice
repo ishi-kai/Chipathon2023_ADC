@@ -1,0 +1,52 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP VDD GND Vout Vin Vctrl
+X0 VDD.t2 Vctrl.t0 a_n1462_621 VDD.t1 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X1 Vin.t0 a_n1462_621 Vout.t0 VDD.t0 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X2 Vin.t1 Vctrl.t1 Vout.t2 GND.t4 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+X3 GND.t3 Vctrl.t2 a_n1462_621 GND.t2 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+X4 Vout.t1 a_n1462_621 GND.t1 GND.t0 nfet_03v3 ad=1.708p pd=6.82u as=1.708p ps=6.82u w=2.8u l=0.28u
+R0 Vctrl.n0 Vctrl.t1 60.5052
+R1 Vctrl Vctrl.t0 56.0454
+R2 Vctrl.n0 Vctrl.t2 55.9719
+R3 Vctrl Vctrl.n0 0.0999737
+R4 VDD VDD.t0 322.051
+R5 VDD VDD.t1 311.132
+R6 VDD VDD.t2 2.0905
+R7 Vout.n0 Vout.t1 3.20817
+R8 Vout Vout.t0 2.78404
+R9 Vout.n0 Vout.t2 2.72491
+R10 Vout Vout.n0 0.0396304
+R11 Vin Vin.t0 2.90338
+R12 Vin Vin.t1 2.73469
+R13 GND.n4 GND.n2 615124
+R14 GND.t4 GND.t0 1870.13
+R15 GND.t2 GND.n4 1727.8
+R16 GND.n4 GND.n3 1312.65
+R17 GND.n5 GND.t2 990.524
+R18 GND.n3 GND.t4 988.443
+R19 GND.n2 GND.n1 761.205
+R20 GND.t0 GND.n2 229.32
+R21 GND.n3 GND.n0 6.81971
+R22 GND.n5 GND.n0 6.18222
+R23 GND.n1 GND.n0 5.99093
+R24 GND.n5 GND.t3 2.1605
+R25 GND.n1 GND.t1 2.1605
+R26 GND GND.n5 0.00338991
+C0 Vctrl VDD 0.180882f
+C1 Vout VDD 0.065352f
+C2 Vin Vctrl 0.788322f
+C3 Vin Vout 0.017083f
+C4 a_n1462_621 VDD 0.697326f
+C5 Vctrl Vout 0.695989f
+C6 Vin a_n1462_621 0.700474f
+C7 a_n1462_621 Vctrl 1.02913f
+C8 a_n1462_621 Vout 0.897006f
+C9 Vin VDD 0.378679f
+C10 Vin GND 0.468594f
+C11 Vout GND 0.495409f
+C12 Vctrl GND 1.57303f
+C13 VDD GND 4.10597f
+C14 a_n1462_621 GND 1.22892f
+.ends
+
