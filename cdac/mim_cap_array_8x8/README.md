@@ -11,7 +11,3 @@
  ├ ─ ─  mim_cap_array8x8_15step.gds : GDS2 file of 8x8 capacitory array in which the hierarchy is flattened into the "TOP" cell
  └ ─ ─  mim_cap_array_tb.sch : testbench
  </pre>
-
----
-
-![Summary_06/04/2024](figures/summary_06042024.png)
