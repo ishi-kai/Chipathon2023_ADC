@@ -59,7 +59,7 @@ N 480 -130 500 -130 {
 lab=GND}
 C {symbols/pfet_03v3.sym} 360 -340 1 0 {name=M1
 L=0.28u
-W=2.8u
+W=28u
 nf=10
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -73,7 +73,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 360 -120 3 0 {name=M2
 L=0.28u
-W=2.8u
+W=28u
 nf=10
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -87,7 +87,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 200 -390 0 0 {name=M3
 L=0.28u
-W=2.8u
+W=28u
 nf=10
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -101,7 +101,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 200 -330 0 0 {name=M4
 L=0.28u
-W=2.8u
+W=28u
 nf=10
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -122,7 +122,7 @@ C {devices/lab_wire.sym} 360 -290 3 0 {name=p8 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 360 -170 1 0 {name=p6 sig_type=std_logic lab=GND}
 C {symbols/nfet_03v3.sym} 520 -160 0 1 {name=M5
 L=0.28u
-W=2.8u
+W=28u
 nf=10
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
