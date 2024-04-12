@@ -42,7 +42,7 @@ C {devices/iopin.sym} -40 140 0 0 {name=p4 lab=GND
 }
 C {symbols/pfet_03v3.sym} -60 -10 0 0 {name=M1
 L=0.28u
-W=2.8u
+W=28u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -56,7 +56,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -60 80 0 0 {name=M2
 L=0.28u
-W=2.8u
+W=28u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
