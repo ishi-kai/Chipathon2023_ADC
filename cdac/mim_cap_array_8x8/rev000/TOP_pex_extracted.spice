@@ -1,0 +1,115 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP common_bottom top_c2 top_c3 top_c4 top_c5 top_c_dummy top_c1 top_c0
+X0 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X1 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X2 top_c_dummy common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X3 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X4 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X5 top_c1 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X6 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X7 top_c2 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X8 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X9 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X10 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X11 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X12 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X13 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X14 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X15 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X16 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X17 m4_n6600_6600 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X18 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X19 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X20 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X21 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X22 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X23 top_c2 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X24 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X25 m4_n3600_6600 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X26 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X27 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X28 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X29 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X30 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X31 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X32 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X33 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X34 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X35 top_c0 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X36 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X37 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X38 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X39 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X40 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X41 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X42 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X43 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X44 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X45 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X46 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X47 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X48 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X49 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X50 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X51 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X52 top_c1 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X53 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X54 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X55 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X56 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X57 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X58 top_c3 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X59 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X60 top_c4 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X61 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X62 top_c2 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X63 top_c5 common_bottom cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+C0 common_bottom top_c4 27.325802f
+C1 top_c1 top_c2 0.051003f
+C2 top_c0 top_c2 0.02726f
+C3 top_c1 top_c3 5.04e-19
+C4 top_c4 top_c2 0.285824f
+C5 top_c0 top_c3 5.04e-19
+C6 top_c4 top_c3 2.75666f
+C7 common_bottom top_c_dummy 2.14013f
+C8 common_bottom top_c5 55.1229f
+C9 common_bottom m4_n3600_6600 0.958139f
+C10 top_c_dummy top_c2 2.01799f
+C11 top_c1 top_c0 2.05381f
+C12 top_c5 top_c2 1.27942f
+C13 m4_n6600_6600 top_c5 0.11486f
+C14 top_c4 top_c1 0.381889f
+C15 top_c_dummy top_c3 0.004478f
+C16 top_c3 top_c5 2.30762f
+C17 top_c4 top_c0 0.208334f
+C18 m4_n6600_6600 m4_n3600_6600 0.22972f
+C19 m4_n3600_6600 top_c3 0.235662f
+C20 top_c1 top_c_dummy 0.013909f
+C21 top_c1 top_c5 0.622374f
+C22 top_c0 top_c_dummy 0.089269f
+C23 top_c0 top_c5 0.439582f
+C24 top_c4 top_c_dummy 0.362575f
+C25 top_c4 top_c5 5.43367f
+C26 top_c4 m4_n3600_6600 0.103179f
+C27 common_bottom top_c2 7.71648f
+C28 common_bottom m4_n6600_6600 0.923504f
+C29 top_c_dummy top_c5 0.295218f
+C30 common_bottom top_c3 11.6182f
+C31 m4_n6600_6600 top_c2 0.200803f
+C32 top_c3 top_c2 1.05501f
+C33 m4_n6600_6600 top_c3 0.038421f
+C34 common_bottom top_c1 3.53643f
+C35 common_bottom top_c0 1.85446f
+C36 common_bottom VSUBS 72.6951f
+C37 top_c_dummy VSUBS 3.99075f
+C38 top_c0 VSUBS 4.67444f
+C39 top_c1 VSUBS 7.41963f
+C40 top_c2 VSUBS 16.816599f
+C41 top_c5 VSUBS 63.8426f
+C42 top_c3 VSUBS 27.891699f
+C43 top_c4 VSUBS 40.5133f
+C44 m4_n3600_6600 VSUBS 1.28425f
+C45 m4_n6600_6600 VSUBS 1.12611f
+.ends
+
