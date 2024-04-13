@@ -230,7 +230,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 660 -350 0 0 {name=M6
@@ -244,7 +244,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 700 -260 0 1 {name=M7
@@ -258,7 +258,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 450 -280 0 0 {name=M8
@@ -328,7 +328,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 920 -350 0 1 {name=M11
@@ -342,7 +342,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 880 -260 0 0 {name=M12
@@ -356,7 +356,7 @@ as="'int((nf+2)/2) * W/nf * 0.18u'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_03v3
+model=pfet_03v3_dn
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 1130 -280 0 1 {name=M13

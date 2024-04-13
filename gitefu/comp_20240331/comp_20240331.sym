@@ -2,7 +2,7 @@ v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=primitive
-format="@name @@VINP @@VOUTP @@VOUTN @@VINN @@CLK @@VDD @@VSS @prefix"
+format="@name @@VDD @@CLK @@VOUTP @@VOUTN @@VINP @@VINN @@VSS @prefix"
 template="name=x1 prefix=TOP"
 extra="prefix"
 highlight=true
