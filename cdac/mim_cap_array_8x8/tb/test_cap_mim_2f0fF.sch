@@ -28,8 +28,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3e-08
-x2=1.7e-07
+x1=6.2e-08
+x2=4.02e-07
 divx=5
 subdivx=1
 
@@ -48,8 +48,8 @@ ypos2=2
 
 subdivy=1
 unity=1
-x1=-3e-08
-x2=1.7e-07
+x1=6.2e-08
+x2=4.02e-07
 divx=5
 subdivx=1
 
@@ -65,8 +65,12 @@ divy=10
 
 
 
-y1=-0.1132e-12
-y2=-0.1128e-12}
+
+
+
+
+y1=-0.123536e-12
+y2=-0.1235e-12}
 N 50 -490 230 -490 {
 lab=P}
 N 50 -330 50 -310 {
@@ -75,13 +79,13 @@ N 50 -310 230 -310 {
 lab=GND}
 N 50 -430 50 -390 {
 lab=IN}
-N -130 -460 -20 -460 {
-lab=GND}
-N -20 -460 -20 -300 {
-lab=GND}
 N 230 -310 230 -290 {
 lab=GND}
-N -130 -320 -70 -320 {
+N -130 -410 -20 -410 {
+lab=GND}
+N -20 -410 -20 -300 {
+lab=GND}
+N -130 -350 -70 -350 {
 lab=P}
 C {devices/code_shown.sym} 30 -240 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
@@ -121,9 +125,9 @@ C {devices/lab_pin.sym} 50 -410 0 0 {name=l1 sig_type=std_logic lab=IN}
 C {devices/gnd.sym} 230 -290 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 230 -490 0 1 {name=l3 sig_type=std_logic lab=P}
 C {devices/gnd.sym} -20 -300 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} -70 -320 0 1 {name=l6 sig_type=std_logic lab=P}
-C {mim_cap_array8x8_15step.sym} -280 -390 0 0 {type=primitive
-format="@name @@common_bottom @@top_c2 @@top_c3 @@top_c4 @@top_c5 @@top_c_dummy @@top_c1 @@top_c0 @prefix"
+C {devices/lab_pin.sym} -70 -350 0 1 {name=l6 sig_type=std_logic lab=P}
+C {advanced_mimcap_array8x8_15step.sym} -280 -340 0 0 {type=primitive
+format="@name @@top_c0 @@top_c1 @@top_c5 @@top_c3 @@top_c2 @@top_c4 @@top_c_dummy @@common_bottom @prefix"
 template="name=x1 prefix=TOP"
 extra="prefix"
 highlight=true}
