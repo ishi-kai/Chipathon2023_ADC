@@ -11,13 +11,24 @@
 |Testbench env. 1|[tb/mim_cap_array_charge_test.sch](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/cdac/mim_cap_array_8x8/tb/mim_cap_array_charge_test.sch)|RC charging circuit|
 |Testbench env. 2|[tb/test_cap_mim_2f0fF.sch](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/cdac/mim_cap_array_8x8/tb/test_cap_mim_2f0fF.sch)|Capacitance measurement|
 
+<br />
+<br />
+<br />
 
-
-* Schematic
+* Schematic (14/04/2024)
+  
 ![sch](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/cdac/mim_cap_array_8x8/figures/advanced_mimcap_array8x8_15step.png)
 
-* GDSII
+<br />
+
+* GDSII (14/04/2024)
+  
 ![gds](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/cdac/mim_cap_array_8x8/figures/mimcap_8x8_cdac.png)
 
-* RC charging
+<br />
+
+* RC charging (07/04/2024)
+  
 ![alt text](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/cdac/mim_cap_array_8x8/figures/mim_cap_array_charge_1kohm_3v3.png)
+
+<br />
