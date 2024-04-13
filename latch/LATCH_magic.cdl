@@ -1,0 +1,19 @@
+** sch_path: /home/nkimura/Chipathon2023_ADC/latch/TOP.sch
+.subckt TOP VDD Qn Q R S GND
+*.PININFO Q:O Qn:O GND:I VDD:I S:I R:I
+x1 VDD Qn Q GND inv
+x2 VDD Q Qn GND inv
+XM1 Qn S GND GND nfet_03v3 L=0.28u W=28u nf=1 m=1
+XM2 Q R GND GND nfet_03v3 L=0.28u W=28u nf=1 m=1
+.ends
+
+* expanding   symbol:  inverter/inv.sym # of pins=4
+** sym_path: /home/nkimura/Chipathon2023_ADC/inverter/inv.sym
+** sch_path: /home/nkimura/Chipathon2023_ADC/inverter/inv.sch
+.subckt inv VDD A Q GND
+*.PININFO A:I Q:O VDD:B GND:B
+XM1 Q A VDD VDD pfet_03v3 L=0.28u W=28u nf=1 m=1
+XM2 Q A GND GND nfet_03v3 L=0.28u W=28u nf=1 m=1
+.ends
+
+.end

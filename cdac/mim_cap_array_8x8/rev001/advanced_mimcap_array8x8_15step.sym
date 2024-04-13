@@ -1,0 +1,50 @@
+v {xschem version=3.4.5 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -157.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -142 0 0 0.2 0.2 {}
+L 4 -130 -130 130 -130 {}
+L 4 -130 130 130 130 {}
+L 4 -130 -130 -130 130 {}
+L 4 130 -130 130 130 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=common_bottom dir=inout}
+L 7 130 -120 150 -120 {}
+T {common_bottom} 125 -124 0 1 0.2 0.2 {}
+B 5 147.5 -102.5 152.5 -97.5 {name=common_bottom dir=inout}
+L 7 130 -100 150 -100 {}
+T {common_bottom} 125 -104 0 1 0.2 0.2 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=common_bottom dir=inout}
+L 7 130 -80 150 -80 {}
+T {common_bottom} 125 -84 0 1 0.2 0.2 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=top_c2 dir=inout}
+L 7 130 -60 150 -60 {}
+T {top_c2} 125 -64 0 1 0.2 0.2 {}
+B 5 147.5 -42.5 152.5 -37.5 {name=top_c1 dir=inout}
+L 7 130 -40 150 -40 {}
+T {top_c1} 125 -44 0 1 0.2 0.2 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=top_c0 dir=inout}
+L 7 130 -20 150 -20 {}
+T {top_c0} 125 -24 0 1 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=top_c_dummy dir=inout}
+L 7 130 0 150 0 {}
+T {top_c_dummy} 125 -4 0 1 0.2 0.2 {}
+B 5 147.5 17.5 152.5 22.5 {name=common_bottom dir=inout}
+L 7 130 20 150 20 {}
+T {common_bottom} 125 16 0 1 0.2 0.2 {}
+B 5 147.5 37.5 152.5 42.5 {name=top_c3 dir=inout}
+L 7 130 40 150 40 {}
+T {top_c3} 125 36 0 1 0.2 0.2 {}
+B 5 147.5 57.5 152.5 62.5 {name=common_bottom dir=inout}
+L 7 130 60 150 60 {}
+T {common_bottom} 125 56 0 1 0.2 0.2 {}
+B 5 147.5 77.5 152.5 82.5 {name=top_c4 dir=inout}
+L 7 130 80 150 80 {}
+T {top_c4} 125 76 0 1 0.2 0.2 {}
+B 5 147.5 97.5 152.5 102.5 {name=common_bottom dir=inout}
+L 7 130 100 150 100 {}
+T {common_bottom} 125 96 0 1 0.2 0.2 {}
+B 5 147.5 117.5 152.5 122.5 {name=top_c5 dir=inout}
+L 7 130 120 150 120 {}
+T {top_c5} 125 116 0 1 0.2 0.2 {}

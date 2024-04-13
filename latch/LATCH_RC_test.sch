@@ -35,7 +35,6 @@ N -70 160 -50 160 {
 lab=S}
 N -70 180 -50 180 {
 lab=GND}
-C {latch/latch.sym} 100 10 0 0 {name=x1}
 C {devices/vsource.sym} -180 10 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/gnd.sym} -180 60 0 0 {name=l1 lab=GND}
 C {devices/res.sym} 280 30 0 0 {name=R1
@@ -65,10 +64,9 @@ vs S 0 pulse(0 3.3 0n 1p 1p 20n 40n)
 save all
 tran 100ps 40ns 
 plot v(R) v(S) v(Q) v(Q2)
-write latch.raw
+write LATCH.raw
 .endc
 "}
-C {latch/latch_rc.sym} 100 150 0 0 {name=x2 prefix=TOP}
 C {devices/res.sym} 280 170 0 0 {name=R2
 value=100k
 footprint=1206
@@ -83,3 +81,5 @@ C {devices/lab_wire.sym} -70 160 0 0 {name=p9 sig_type=std_logic lab=S}
 C {devices/lab_wire.sym} -70 180 0 0 {name=p10 sig_type=std_logic lab=GND}
 C {devices/lab_wire.sym} -110 -20 0 0 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -110 40 0 0 {name=p12 sig_type=std_logic lab=GND}
+C {latch/LATCH.sym} 100 10 0 0 {name=x1}
+C {latch/LATCH_RC.sym} 100 150 0 0 {name=x2 prefix=TOP}
