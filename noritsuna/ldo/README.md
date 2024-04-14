@@ -1,7 +1,7 @@
 # LDO for ADC of Chipathon2023's Japan Team
 
 ![Curcuit](./images/curcuit_ldo.jpg)  
-![Layout](/images/layout_ldo.jpg)  
+![Layout](./images/layout_ldo.jpg)  
 
 ## Specification
     - Process
