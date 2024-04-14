@@ -1,0 +1,9 @@
+$ export PDK=gf180mcuD
+$ export PDKPATH=$PDK_ROOT/$PDK
+$ export STD_CELL_LIBRARY=gf180mcu_fd_sc_mcu7t5v0
+$ cd caravel_user_project/openlane/
+$ flow.tcl -design user_proj_sarlogic -tag foo -overwrite
+
+check:
+ config.json, pin_order in caravel_user_project/openlane/user_proj_sarlogic
+ SAR_LOGIC_caravel.v in caravel_user_project/verilog/rtl
