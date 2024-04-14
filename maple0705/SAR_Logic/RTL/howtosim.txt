@@ -1,0 +1,3 @@
+$ iverilog SAR_LOGIC_tb.v SAR_LOGIC.v
+$ vvp a.out
+$ gtkwave wave_SAR_Logic.vcd
