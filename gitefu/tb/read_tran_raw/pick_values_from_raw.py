@@ -16,7 +16,18 @@ HOME_DIR = os.environ["HOME"]
 FILE_PATH = HOME_DIR + "/.xschem/simulations/VOUT_EXT.raw"  # change here
 WRITE_PARAMS = ["time", "v(vin)", "v(voutp)"]  # change here
 TIME_PARAM_NAME = "time"  # change here
-REQUIRE_TIME = 10 * 10 ** (-12)  # change here
+REQUIRE_TIME = [
+    10 * 10 ** (-12),
+    20 * 10 ** (-12),
+    30 * 10 ** (-12),
+    40 * 10 ** (-12),
+    50 * 10 ** (-12),
+    60 * 10 ** (-12),
+    70 * 10 ** (-12),
+    80 * 10 ** (-12),
+    90 * 10 ** (-12),
+    100 * 10 ** (-12),
+]  # change here
 
 BSIZE_SP = 512  # Max size of a line of data; we don't want to read the
 # whole file to find a line, in case file does not have
@@ -101,12 +112,9 @@ if __name__ == "__main__":
     arrs, plots = rawread(FILE_PATH)
     print(len(np.real(arrs[0][TIME_PARAM_NAME])))
     print(WRITE_PARAMS)
-    i = bisect_left(arrs[0][TIME_PARAM_NAME], REQUIRE_TIME)
-    write_data = []
-    for p in range(len(WRITE_PARAMS)):
-        write_data.append(np.real(arrs[0][WRITE_PARAMS[p]][i - 1]))
-    print(write_data)
-    write_data = []
-    for p in range(len(WRITE_PARAMS)):
-        write_data.append(np.real(arrs[0][WRITE_PARAMS[p]][i]))
-    print(write_data)
+    for j in REQUIRE_TIME:
+        i = bisect_left(arrs[0][TIME_PARAM_NAME], j)
+        write_data = []
+        for p in range(len(WRITE_PARAMS)):
+            write_data.append(np.real(arrs[0][WRITE_PARAMS[p]][i - 1]))
+        print(write_data)
