@@ -1,0 +1,2 @@
+cd ~/.xschem/simulations
+sed -e 's/.*= //' sar_adc_tran_out_typ.txt | awk '{if(NR%7)ORS=",";else ORS="\n";print}' > sar_adc_tran_out_typ.csv

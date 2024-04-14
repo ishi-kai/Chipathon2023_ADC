@@ -5,17 +5,11 @@ K {}
 V {}
 S {}
 E {}
-N 60 -300 60 -260 {
-lab=VDD}
 N 2480 -820 2760 -820 {
 lab=COMP_OUT}
-N 160 -300 160 -260 {
-lab=CLK}
 N 2740 -860 2760 -860 {
 lab=CLK}
 N 2740 -880 2760 -880 {
-lab=XRST}
-N 420 -300 420 -260 {
 lab=XRST}
 N 3060 -780 3060 -690 {
 lab=SDAC0}
@@ -100,15 +94,13 @@ lab=SC}
 N 1500 -700 1500 -500 {
 lab=SC}
 N 1320 -480 1340 -480 {
-lab=GND}
+lab=VSS}
 N 1320 -480 1320 -420 {
-lab=GND}
-N 1320 -420 1520 -420 {
-lab=GND}
-N 1520 -440 1520 -420 {
-lab=GND}
-N 1500 -440 1520 -440 {
-lab=GND}
+lab=VSS}
+N 1320 -420 1500 -420 {
+lab=VSS}
+N 1500 -440 1500 -420 {
+lab=VSS}
 N 1500 -380 1500 -340 {
 lab=VINN}
 N 1300 -380 1500 -380 {
@@ -169,13 +161,11 @@ N 3060 -480 3080 -480 {
 lab=VREF}
 N 3080 -540 3080 -480 {
 lab=VREF}
-N 660 -300 660 -260 {
-lab=VIN}
 N 1540 -860 1700 -860 {
 lab=VIN}
-N 2120 -880 2120 -860 {
+N 2080 -880 2080 -860 {
 lab=VOUTP}
-N 2120 -920 2120 -900 {
+N 2080 -920 2080 -900 {
 lab=VOUTN}
 N 2040 -920 2040 -900 {
 lab=VOUTN}
@@ -231,80 +221,19 @@ N 3040 -1120 3040 -980 {
 lab=DIGITAL_OUT[0]}
 N 3060 -1120 3060 -980 {
 lab=EOC}
-N 3240 -600 3380 -600 {
-lab=VREF}
-N 3240 -600 3240 -540 {
-lab=VREF}
 N 2020 -900 2020 -880 {
 lab=VOUTP}
 N 2020 -880 2140 -880 {
 lab=VOUTP}
 N 2040 -900 2140 -900 {
 lab=VOUTN}
-C {devices/vsource.sym} 60 -230 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/vsource.sym} 160 -230 0 0 {name=VPLL value="pulse(0 3.3 0 1n 1n 10n 20n)" savecurrent=false}
-C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}
-C {devices/simulator_commands_shown.sym} 40 -1350 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value=".include ~/design/Git/Chipathon2023/maple0705/SAR_Logic/klayout/user_proj_sarlogic_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/maple0705/SW_CDAC/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/cdac/mim_cap_array_8x8/rev001/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/latch/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/gitefu/comp_20240331/TOP_pex_extracted.spice
-.temp 27
-.control
-save all
-alter V1 3.3
-
-let start_vin = 0.0515625 / 2
-let stop_vin = 3.3
-let delta_vin = 0.0515625
-let vin_act = start_vin
-alter V2 vin_act
-
-while vin_act le stop_vin
-	tran 100n 1u
-	write sar_adc_tran.raw
-	meas tran vin FIND v(VIN) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout5 FIND v(DIGITAL_OUT[5]) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout4 FIND v(DIGITAL_OUT[4]) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout3 FIND v(DIGITAL_OUT[3]) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout2 FIND v(DIGITAL_OUT[2]) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout1 FIND v(DIGITAL_OUT[1]) WHEN v(EOC)=1.65 FALL=LAST
-	meas tran vout0 FIND v(DIGITAL_OUT[0]) WHEN v(EOC)=1.65 FALL=LAST
-	print vin >> sar_adc_tran_out_typ.txt
-	print vout5 >> sar_adc_tran_out_typ.txt
-	print vout4 >> sar_adc_tran_out_typ.txt
-	print vout3 >> sar_adc_tran_out_typ.txt
-	print vout2 >> sar_adc_tran_out_typ.txt
-	print vout1 >> sar_adc_tran_out_typ.txt
-	print vout0 >> sar_adc_tran_out_typ.txt
-	let vin_act = vin_act + delta_vin
-	alter V2 vin_act
-end
-
-.endc
-"}
-C {devices/code_shown.sym} 1080 -1350 0 0 {name=s1 only_toplevel=false 
-format="tcleval( @value )"
-value=".include $::180MCU_MODELS/design.ngspice
-.lib $180MCU_MODELS/sm141064.ngspice typical
-.lib $180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $180MCU_MODELS/sm141064.ngspice bjt_typical
-.lib $180MCU_MODELS/sm141064.ngspice res_typical
-.lib $180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $180MCU_MODELS/sm141064.ngspice mimcap_typical
-.lib $180MCU_MODELS/sm141064.ngspice diode_typical
-.include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
-C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
-C {devices/lab_pin.sym} 160 -300 0 0 {name=p2 sig_type=std_logic lab=CLK}
+N 3140 -460 3200 -460 {
+lab=VREF}
+N 3140 -540 3140 -460 {
+lab=VREF}
+C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC}
 C {devices/lab_pin.sym} 2740 -860 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2740 -880 0 0 {name=p7 sig_type=std_logic lab=XRST}
-C {devices/lab_pin.sym} 420 -300 0 0 {name=p9 sig_type=std_logic lab=XRST}
-C {devices/gnd.sym} 420 -200 0 0 {name=l1 lab=GND}
-C {devices/vsource.sym} 420 -230 0 0 {name=V3 value="pwl(0 0 100n 0 101n 3.3)" savecurrent=false}
 C {devices/lab_pin.sym} 3050 -760 3 0 {name=p10 sig_type=std_logic lab=SDAC0}
 C {devices/lab_pin.sym} 3030 -760 3 0 {name=p11 sig_type=std_logic lab=SDAC1}
 C {devices/lab_pin.sym} 3010 -760 3 0 {name=p12 sig_type=std_logic lab=SDAC2}
@@ -314,29 +243,16 @@ C {devices/lab_pin.sym} 2950 -760 3 0 {name=p15 sig_type=std_logic lab=SDAC5}
 C {devices/lab_pin.sym} 2930 -760 3 0 {name=p16 sig_type=std_logic lab=SDAC6}
 C {devices/lab_pin.sym} 2890 -760 3 0 {name=p19 sig_type=std_logic lab=SC}
 C {devices/lab_pin.sym} 3280 -840 0 0 {name=p20 sig_type=std_logic lab=COMP_CLK}
-C {design/Git/Chipathon2023/cdac/mim_cap_array_8x8/rev001/advanced_mimcap_array8x8_15step.sym} 1350 -270 0 0 {name=xCDAC_CAP prefix=CAP_ARRAY}
-C {design/Git/Chipathon2023/gitefu/comp_20240331/comp_20240331.sym} 1850 -880 0 0 {name=xComp prefix=COMP}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 3060 -500 0 1 {name=xSW_SDAC0 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2840 -500 0 1 {name=xSW_SDAC1 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2620 -500 0 1 {name=xSW_SDAC2 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2400 -500 0 1 {name=xSW_SDAC3 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2180 -500 0 1 {name=xSW_SDAC4 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1960 -500 0 1 {name=xSW_SDAC5 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1740 -500 0 1 {name=xSW_SDAC6 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1500 -500 0 1 {name=xSW_SC prefix=SW_CDAC}
-C {devices/gnd.sym} 1500 -440 0 1 {name=l4 lab=GND}
-C {devices/gnd.sym} 1740 -440 0 1 {name=l5 lab=GND}
-C {devices/gnd.sym} 1960 -440 0 1 {name=l6 lab=GND}
-C {devices/gnd.sym} 2180 -440 0 1 {name=l7 lab=GND}
-C {devices/gnd.sym} 2400 -440 0 1 {name=l8 lab=GND}
-C {devices/gnd.sym} 2620 -440 0 1 {name=l9 lab=GND}
-C {devices/gnd.sym} 2840 -440 0 1 {name=l10 lab=GND}
-C {devices/gnd.sym} 3060 -440 0 1 {name=l11 lab=GND}
-C {devices/vdd.sym} 60 -300 0 0 {name=l12 lab=VDD}
-C {devices/vdd.sym} 1700 -920 0 0 {name=l13 lab=VDD}
-C {devices/vdd.sym} 2140 -920 0 0 {name=l14 lab=VDD}
-C {devices/vdd.sym} 2760 -920 0 0 {name=l15 lab=VDD}
-C {devices/gnd.sym} 2760 -900 0 1 {name=l16 lab=GND}
+C {design/Git/Chipathon2023/cdac/mim_cap_array_8x8/rev001/advanced_mimcap_array8x8_15step.sym} 1350 -270 0 0 {name=xCDAC_CAP}
+C {design/Git/Chipathon2023/gitefu/comp_20240331/comp_20240331.sym} 1850 -880 0 0 {name=xComp}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 3060 -500 0 1 {name=xSW_SDAC0}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 2840 -500 0 1 {name=xSW_SDAC1}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 2620 -500 0 1 {name=xSW_SDAC2}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 2400 -500 0 1 {name=xSW_SDAC3}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 2180 -500 0 1 {name=xSW_SDAC4}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 1960 -500 0 1 {name=xSW_SDAC5}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 1740 -500 0 1 {name=xSW_SDAC6}
+C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym} 1500 -500 0 1 {name=xSW_SC}
 C {devices/lab_pin.sym} 1500 -460 2 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1740 -460 2 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1960 -460 2 0 {name=p4 sig_type=std_logic lab=VDD}
@@ -345,20 +261,9 @@ C {devices/lab_pin.sym} 2400 -460 2 0 {name=p8 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2620 -460 2 0 {name=p22 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2840 -460 2 0 {name=p23 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 3060 -460 2 0 {name=p24 sig_type=std_logic lab=VDD}
-C {devices/gnd.sym} 1700 -840 0 1 {name=l18 lab=GND}
-C {devices/gnd.sym} 2140 -860 0 1 {name=l19 lab=GND}
-C {devices/capa.sym} 2520 -890 0 0 {name=Cxx0
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 2520 -860 0 1 {name=l20 lab=GND}
-C {devices/lab_pin.sym} 660 -300 2 1 {name=p25 sig_type=std_logic lab=VIN}
-C {devices/gnd.sym} 660 -200 0 0 {name=l22 lab=GND}
-C {devices/vsource.sym} 660 -230 0 0 {name=V2 value=1 savecurrent=false}
 C {devices/lab_pin.sym} 1540 -860 0 0 {name=p26 sig_type=std_logic lab=VIN}
-C {devices/lab_pin.sym} 2120 -920 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
-C {devices/lab_pin.sym} 2120 -860 2 1 {name=p28 sig_type=std_logic lab=VOUTP}
+C {devices/lab_pin.sym} 2080 -920 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
+C {devices/lab_pin.sym} 2080 -860 2 1 {name=p28 sig_type=std_logic lab=VOUTP}
 C {devices/lab_pin.sym} 2920 -320 0 1 {name=p29 sig_type=std_logic lab=CDAC2}
 C {devices/lab_pin.sym} 2920 -300 0 1 {name=p30 sig_type=std_logic lab=CDAC1}
 C {devices/lab_pin.sym} 2920 -280 0 1 {name=p31 sig_type=std_logic lab=CDAC0}
@@ -370,7 +275,6 @@ C {devices/lab_pin.sym} 1300 -860 0 1 {name=p36 sig_type=std_logic lab=VINN}
 C {devices/lab_pin.sym} 3260 -540 2 0 {name=p37 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2520 -920 2 0 {name=p38 sig_type=std_logic lab=Qn_LATCH}
 C {devices/lab_pin.sym} 2480 -820 0 0 {name=p39 sig_type=std_logic lab=COMP_OUT}
-C {design/Git/Chipathon2023/latch/latch_rc.sym} 2290 -890 0 0 {name=x1 prefix=LATCH}
 C {devices/lab_pin.sym} 2920 -1100 0 0 {name=p18 sig_type=std_logic lab=DIGITAL_OUT[5]}
 C {devices/lab_pin.sym} 2920 -1080 0 0 {name=p21 sig_type=std_logic lab=DIGITAL_OUT[4]}
 C {devices/lab_pin.sym} 2920 -1060 0 0 {name=p40 sig_type=std_logic lab=DIGITAL_OUT[3]}
@@ -378,8 +282,28 @@ C {devices/lab_pin.sym} 2920 -1040 0 0 {name=p41 sig_type=std_logic lab=DIGITAL_
 C {devices/lab_pin.sym} 2920 -1020 0 0 {name=p42 sig_type=std_logic lab=DIGITAL_OUT[1]}
 C {devices/lab_pin.sym} 2920 -1000 0 0 {name=p43 sig_type=std_logic lab=DIGITAL_OUT[0]}
 C {devices/lab_pin.sym} 3060 -1000 2 0 {name=p17 sig_type=std_logic lab=EOC}
-C {devices/gnd.sym} 3200 -440 0 1 {name=l17 lab=GND}
-C {devices/vdd.sym} 3200 -480 0 0 {name=l21 lab=VDD}
 C {design/Git/Chipathon2023/noritsuna/ldo/xschem/ldo.sym} 3350 -460 0 1 {name=xLDO}
-C {devices/vsource.sym} 3380 -570 0 0 {name=Vref value=3.3 savecurrent=false}
-C {devices/gnd.sym} 3380 -540 0 0 {name=l23 lab=GND}
+C {devices/ipin.sym} 2080 -1240 0 0 {name=p44 lab=VIN}
+C {devices/ipin.sym} 2080 -1260 0 0 {name=p45 lab=XRST}
+C {devices/ipin.sym} 2080 -1220 0 0 {name=p46 lab=CLK}
+C {devices/opin.sym} 2200 -1260 0 0 {name=p47 lab=DIGITAL_OUT[5:0]}
+C {devices/opin.sym} 2200 -1240 0 0 {name=p48 lab=EOC}
+C {devices/iopin.sym} 2080 -1200 0 0 {name=p49 lab=VDD}
+C {devices/iopin.sym} 2080 -1180 0 0 {name=p50 lab=VSS}
+C {devices/lab_pin.sym} 1700 -920 0 0 {name=p51 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 2140 -920 0 0 {name=p52 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 2760 -920 0 0 {name=p53 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 3200 -480 0 0 {name=p54 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1700 -840 0 0 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2140 -860 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2760 -900 0 0 {name=p25 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 3200 -440 0 0 {name=p55 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1500 -440 2 0 {name=p56 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1740 -440 2 0 {name=p57 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1960 -440 2 0 {name=p58 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2180 -440 2 0 {name=p59 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2400 -440 2 0 {name=p60 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2620 -440 2 0 {name=p61 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2840 -440 2 0 {name=p62 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 3060 -440 2 0 {name=p63 sig_type=std_logic lab=VSS}
+C {design/Git/Chipathon2023/latch/LATCH.sym} 2290 -890 0 0 {name=xLATCH}

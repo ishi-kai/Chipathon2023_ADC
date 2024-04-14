@@ -12,7 +12,7 @@ lab=GND}
 N 60 -300 60 -260 {
 lab=VDD}
 N 940 -390 960 -390 {
-lab=VDD}
+lab=GND}
 N 160 -300 160 -260 {
 lab=CLK}
 N 940 -430 960 -430 {
@@ -49,30 +49,42 @@ N 1140 -350 1140 -260 {
 lab=SDAC6}
 N 1130 -330 1140 -330 {
 lab=SDAC6}
-N 1120 -350 1120 -260 {
-lab=SDAC7}
-N 1110 -330 1120 -330 {
-lab=SDAC7}
 N 1100 -350 1100 -260 {
-lab=SDAC8}
+lab=SC}
 N 1090 -330 1100 -330 {
-lab=SDAC8}
-N 1080 -350 1080 -260 {
 lab=SC}
-N 1070 -330 1080 -330 {
-lab=SC}
-N 1380 -490 1460 -490 {
-lab=DIGITAL_OUT}
 N 1380 -390 1460 -390 {
 lab=COMP_CLK}
 N 1480 -410 1480 -390 {
 lab=COMP_CLK}
-N 1460 -490 1500 -490 {
-lab=DIGITAL_OUT}
 N 1460 -390 1500 -390 {
 lab=COMP_CLK}
-N 1480 -510 1480 -490 {
-lab=DIGITAL_OUT}
+N 1140 -690 1140 -550 {
+lab=DIGITAL_OUT[5]}
+N 1120 -670 1140 -670 {
+lab=DIGITAL_OUT[5]}
+N 1120 -650 1160 -650 {
+lab=DIGITAL_OUT[4]}
+N 1120 -630 1180 -630 {
+lab=DIGITAL_OUT[3]}
+N 1120 -610 1200 -610 {
+lab=DIGITAL_OUT[2]}
+N 1120 -590 1220 -590 {
+lab=DIGITAL_OUT[1]}
+N 1120 -570 1240 -570 {
+lab=DIGITAL_OUT[0]}
+N 1160 -690 1160 -550 {
+lab=DIGITAL_OUT[4]}
+N 1180 -690 1180 -550 {
+lab=DIGITAL_OUT[3]}
+N 1200 -690 1200 -550 {
+lab=DIGITAL_OUT[2]}
+N 1220 -690 1220 -550 {
+lab=DIGITAL_OUT[1]}
+N 1240 -690 1240 -550 {
+lab=DIGITAL_OUT[0]}
+N 1260 -690 1260 -550 {
+lab=EOC}
 C {devices/capa.sym} 1260 -230 0 0 {name=C0
 m=1
 value=10f
@@ -90,13 +102,18 @@ C {devices/lab_pin.sym} 940 -390 0 0 {name=p8 sig_type=std_logic lab=GND}
 C {devices/simulator_commands_shown.sym} 40 -850 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
-value=".include ~/design/klayout/sar_logic/user_proj_sarlogic_pex_extracted.spice
+value=".include ~/design/Git/Chipathon2023/maple0705/SAR_Logic/klayout/user_proj_sarlogic_pex_extracted.spice
 .control
 save all
-tran 100n 10u
-plot v(vinp) v(VINN) v(CLK) v(VOUTP) v(VOUTN)
-wrdata ~/design/xschem/sar_logic/tran_sar_adc.txt v(vinp) v(VINN) v(CLK) v(VOUTP) v(VOUTN)
-write sar_adc_tran.raw
+tran 100n 100n
+write sar_logic_tran.raw
+meas tran out0 FIND v(DIGITAL_OUT[0]) WHEN v(EOC)=1.65 FALL=LAST
+meas tran out1 FIND v(DIGITAL_OUT[1]) WHEN v(EOC)=1.65 FALL=LAST
+meas tran out2 FIND v(DIGITAL_OUT[2]) WHEN v(EOC)=1.65 FALL=LAST
+meas tran out3 FIND v(DIGITAL_OUT[3]) WHEN v(EOC)=1.65 FALL=LAST
+meas tran out4 FIND v(DIGITAL_OUT[4]) WHEN v(EOC)=1.65 FALL=LAST
+meas tran out5 FIND v(DIGITAL_OUT[5]) WHEN v(EOC)=1.65 FALL=LAST
+print yeval >> test.txt
 .endc
 "}
 C {devices/code_shown.sym} 1000 -850 0 0 {name=s1 only_toplevel=false 
@@ -110,7 +127,7 @@ value=".include $::180MCU_MODELS/design.ngspice
 .lib $180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $180MCU_MODELS/sm141064.ngspice diode_typical
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
-C {design/xschem/sar_logic/user_proj_sarlogic.sym} 1170 -440 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
+C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 1170 -440 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
 C {devices/lab_pin.sym} 160 -300 0 0 {name=p2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 940 -430 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 940 -450 0 0 {name=p7 sig_type=std_logic lab=XRST}
@@ -160,38 +177,18 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1140 -200 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 1130 -330 3 0 {name=p16 sig_type=std_logic lab=SDAC6}
-C {devices/capa.sym} 1120 -230 0 0 {name=C7
+C {devices/capa.sym} 1100 -230 0 0 {name=CSC
 m=1
 value=10f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/gnd.sym} 1120 -200 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 1110 -330 3 0 {name=p17 sig_type=std_logic lab=SDAC7}
-C {devices/capa.sym} 1100 -230 0 0 {name=C8
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1100 -200 0 0 {name=l13 lab=GND}
-C {devices/lab_pin.sym} 1090 -330 3 0 {name=p18 sig_type=std_logic lab=SDAC8}
-C {devices/capa.sym} 1080 -230 0 0 {name=CSC
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1080 -200 0 0 {name=l14 lab=GND}
-C {devices/lab_pin.sym} 1070 -330 3 0 {name=p19 sig_type=std_logic lab=SC}
-C {devices/capa.sym} 1500 -360 0 0 {name=C9
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1500 -330 0 0 {name=l15 lab=GND}
-C {devices/capa.sym} 1500 -460 0 0 {name=C10
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 1500 -430 0 0 {name=l17 lab=GND}
+C {devices/gnd.sym} 1100 -200 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} 1090 -330 3 0 {name=p19 sig_type=std_logic lab=SC}
 C {devices/lab_pin.sym} 1480 -410 0 0 {name=p20 sig_type=std_logic lab=COMP_CLK}
-C {devices/lab_pin.sym} 1480 -510 0 0 {name=p21 sig_type=std_logic lab=DIGITAL_OUT}
+C {devices/lab_pin.sym} 1120 -670 0 0 {name=p18 sig_type=std_logic lab=DIGITAL_OUT[5]}
+C {devices/lab_pin.sym} 1120 -650 0 0 {name=p6 sig_type=std_logic lab=DIGITAL_OUT[4]}
+C {devices/lab_pin.sym} 1120 -630 0 0 {name=p40 sig_type=std_logic lab=DIGITAL_OUT[3]}
+C {devices/lab_pin.sym} 1120 -610 0 0 {name=p41 sig_type=std_logic lab=DIGITAL_OUT[2]}
+C {devices/lab_pin.sym} 1120 -590 0 0 {name=p42 sig_type=std_logic lab=DIGITAL_OUT[1]}
+C {devices/lab_pin.sym} 1120 -570 0 0 {name=p43 sig_type=std_logic lab=DIGITAL_OUT[0]}
+C {devices/lab_pin.sym} 1260 -570 2 0 {name=p17 sig_type=std_logic lab=EOC}
