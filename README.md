@@ -81,8 +81,8 @@
 - Designer
     - [Noritsuna Imamura](https://github.com/noritsuna)
 
-- ![Curcuit](./images/curcuit_ldo.jpg)  
-- ![Layout](./images/layout_ldo.jpg)  
+- ![Curcuit](./noritsuna/ldo/images/curcuit_ldo.jpg)  
+- ![Layout](./noritsuna/ldo/images/layout_ldo.jpg)  
 
 ### Specification
     - Size
