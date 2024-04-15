@@ -10,10 +10,16 @@
         - 700um x 550um
     - In Voltage (VDD)
         - 3.3V
+        - Layer4&5(Right Side)
+        - Layer2&4&5(Left Side)
+    - GND (VSS)
+        - Layer1
     - Out Voltage (Vout)
         - 3.2V
+        - Layer4&5
     - Out Ampere (Vout)
         - 4mA
+        - Layer4&5
 
 ## Other Parts
 - [Power Source (Band Gap Reference)](https://github.com/atuchiya/DC23-LTC2/tree/japan-test/BGR)
