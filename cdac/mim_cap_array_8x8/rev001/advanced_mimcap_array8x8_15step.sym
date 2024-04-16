@@ -2,7 +2,7 @@ v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {type=primitive
-format="@name @@top_c0 @@top_c1 @@top_c5 @@top_c3 @@top_c2 @@top_c4 @@top_c_dummy @@common_bottom @prefix"
+format="@name @@top_c5 @@top_c3 @@top_c2 @@top_c4 @@top_c0 @@top_c1 @@top_c_dummy @@common_bottom @prefix"
 template="name=x1 prefix=TOP"
 extra="prefix"
 highlight=true}
