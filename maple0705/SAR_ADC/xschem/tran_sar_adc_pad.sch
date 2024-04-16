@@ -420,11 +420,10 @@ C {design/Git/Chipathon2023/noritsuna/ldo/xschem/ldo.sym} 3350 -460 0 1 {name=xL
 C {devices/vsource.sym} 3380 -570 0 0 {name=Vref value=3.3 savecurrent=false}
 C {devices/gnd.sym} 3380 -540 0 0 {name=l23 lab=GND}
 C {io_bi_t.sym} 2650 -1590 0 1 {name=x2 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
-C {io_dvdd.sym} 40 -360 0 0 {name=x3 DVSS=DVSS VSS=0 prefix=gf180mcu_fd_io__ }
-C {io_dvss.sym} 20 -140 0 0 {name=x4 DVDD=DVDD VDD=VDD prefix=gf180mcu_fd_io__ }
+C {io_dvdd.sym} 20 -300 0 0 {name=x3 DVSS=DVSS VSS=0 prefix=gf180mcu_fd_io__ }
+C {io_dvss.sym} 20 -200 0 0 {name=x4 DVDD=DVDD VDD=VDD prefix=gf180mcu_fd_io__ }
 C {io_asig_5p0.sym} 1500 -860 0 0 {name=x5 DVDD=DVDD DVSS=DVSS VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
 C {devices/gnd.sym} 380 -160 0 0 {name=l24 lab=GND}
-C {devices/gnd.sym} 1540 -860 0 0 {name=l25 lab=GND}
 C {io_bi_t.sym} 2650 -1540 0 1 {name=x7 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1490 0 1 {name=x8 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1440 0 1 {name=x9 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
