@@ -49,8 +49,8 @@ if __name__ == '__main__':
 		res_ref_volt_plot.append(cal_data * ref_volt)
 		res_cnt.append(vin_cnt)
 
-	plt.plot(res_cnt, res_vin_volt_plot, color = 'green', marker = 'x', linestyle = '-.', label = 'Gain')
-	plt.plot(res_cnt, res_ref_volt_plot, color = 'yellow', marker = '+', linestyle = '-.', label = 'Gain')
+	plt.plot(res_cnt, res_vin_volt_plot, color = 'green', marker = 'x', linestyle = '-.', label = 'Vin')
+	plt.plot(res_cnt, res_ref_volt_plot, color = 'yellow', marker = '+', linestyle = '-.', label = 'ADC')
 	view_title = "Vin-ADC"
 	plt.title(view_title)
 	plt.xlabel('V')
