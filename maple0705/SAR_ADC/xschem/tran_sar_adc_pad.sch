@@ -241,22 +241,38 @@ N 2020 -880 2140 -880 {
 lab=VOUTP}
 N 2040 -900 2140 -900 {
 lab=VOUTN}
-N 2690 -1600 2920 -1600 {}
-N 2720 -1580 2920 -1580 {}
-N 2720 -1580 2720 -1550 {}
-N 2690 -1550 2720 -1550 {}
-N 2750 -1560 2920 -1560 {}
-N 2750 -1560 2750 -1500 {}
-N 2690 -1500 2750 -1500 {}
-N 2780 -1540 2920 -1540 {}
-N 2780 -1540 2780 -1450 {}
-N 2690 -1450 2780 -1450 {}
-N 2810 -1520 2920 -1520 {}
-N 2810 -1520 2810 -1400 {}
-N 2690 -1400 2810 -1400 {}
-N 2840 -1500 2920 -1500 {}
-N 2840 -1500 2840 -1350 {}
-N 2690 -1350 2840 -1350 {}
+N 2690 -1600 2920 -1600 {
+lab=#net1}
+N 2720 -1580 2920 -1580 {
+lab=#net2}
+N 2720 -1580 2720 -1550 {
+lab=#net2}
+N 2690 -1550 2720 -1550 {
+lab=#net2}
+N 2750 -1560 2920 -1560 {
+lab=#net3}
+N 2750 -1560 2750 -1500 {
+lab=#net3}
+N 2690 -1500 2750 -1500 {
+lab=#net3}
+N 2780 -1540 2920 -1540 {
+lab=#net4}
+N 2780 -1540 2780 -1450 {
+lab=#net4}
+N 2690 -1450 2780 -1450 {
+lab=#net4}
+N 2810 -1520 2920 -1520 {
+lab=#net5}
+N 2810 -1520 2810 -1400 {
+lab=#net5}
+N 2690 -1400 2810 -1400 {
+lab=#net5}
+N 2840 -1500 2920 -1500 {
+lab=#net6}
+N 2840 -1500 2840 -1350 {
+lab=#net6}
+N 2690 -1350 2840 -1350 {
+lab=#net6}
 C {devices/vsource.sym} 60 -230 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/vsource.sym} 160 -230 0 0 {name=VPLL value="pulse(0 3.3 0 1n 1n 10n 20n)" savecurrent=false}
 C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
@@ -316,7 +332,7 @@ value=".include $::180MCU_MODELS/design.ngspice
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
 C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
 C {devices/lab_pin.sym} 160 -300 0 0 {name=p2 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 2740 -860 0 0 {name=p5 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 2660 -860 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2740 -880 0 0 {name=p7 sig_type=std_logic lab=XRST}
 C {devices/lab_pin.sym} 420 -300 0 0 {name=p9 sig_type=std_logic lab=XRST}
 C {devices/gnd.sym} 420 -200 0 0 {name=l1 lab=GND}
@@ -405,10 +421,9 @@ C {io_dvss.sym} 20 -140 0 0 {name=x4 DVDD=DVDD VDD=VDD prefix=gf180mcu_fd_io__ }
 C {io_asig_5p0.sym} 1500 -860 0 0 {name=x5 DVDD=DVDD DVSS=DVSS VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
 C {devices/gnd.sym} 380 -160 0 0 {name=l24 lab=GND}
 C {devices/gnd.sym} 1540 -860 0 0 {name=l25 lab=GND}
-C {io_asig_5p0.sym} 2700 -860 0 0 {name=x6 DVDD=DVDD DVSS=DVSS VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
-C {devices/gnd.sym} 2740 -860 0 1 {name=l26 lab=GND}
 C {io_bi_t.sym} 2650 -1540 0 1 {name=x7 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1490 0 1 {name=x8 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1440 0 1 {name=x9 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1390 0 1 {name=x10 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1340 0 1 {name=x11 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
+C {io_in_c.sym} 2700 -860 0 0 {name=x6 DVDD=DVDD DVSS=DVSS PD=0 PU=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
