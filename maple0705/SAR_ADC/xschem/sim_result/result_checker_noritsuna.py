@@ -18,11 +18,11 @@ if __name__ == '__main__':
 
 	ref_volt = 3.3
 
-	result_file = "sar_adc_tran_out_typ_woLDO_eachBlockExtracted_20240415.csv"
+	result_file = "sar_adc_tran_out_typ_woLDO_eachBlockExtracted_CArrayideal_20240416.csv"
 	result_file_d = open(result_file, mode='r')
 	result_list = pd.read_csv(result_file_d).values.tolist()
 
-	bits_file = "vout_result.csv"
+	bits_file = "vout_result_CArrayideal.csv"
 	bits_file_d = open(bits_file, mode='w')
 
 
