@@ -53,8 +53,8 @@ if __name__ == '__main__':
 	plt.plot(res_cnt, res_ref_volt_plot, color = 'yellow', marker = '+', linestyle = '-.', label = 'ADC')
 	view_title = "Vin-ADC"
 	plt.title(view_title)
-	plt.xlabel('V')
-	plt.ylabel('cnt')
+	plt.xlabel('cnt')
+	plt.ylabel('V')
 	plt.grid(True)
 	plt.legend()
 	plt.savefig("vin_vout_result.png")
