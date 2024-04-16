@@ -12,9 +12,9 @@ lab=COMP_OUT}
 N 160 -300 160 -260 {
 lab=CLK}
 N 2740 -860 2760 -860 {
-lab=CLK}
+lab=#net1}
 N 2740 -880 2760 -880 {
-lab=XRST}
+lab=#net2}
 N 420 -300 420 -260 {
 lab=XRST}
 N 3060 -780 3060 -690 {
@@ -206,29 +206,29 @@ lab=CDAC4}
 N 1580 -480 1580 -200 {
 lab=CDAC5}
 N 2940 -1620 2940 -1480 {
-lab=#net1}
+lab=#net3}
 N 2920 -1600 2940 -1600 {
-lab=#net1}
+lab=#net3}
 N 2920 -1580 2960 -1580 {
-lab=#net2}
+lab=#net4}
 N 2920 -1560 2980 -1560 {
-lab=#net3}
+lab=#net5}
 N 2920 -1540 3000 -1540 {
-lab=#net4}
+lab=#net6}
 N 2920 -1520 3020 -1520 {
-lab=#net5}
+lab=#net7}
 N 2920 -1500 3040 -1500 {
-lab=#net6}
+lab=#net8}
 N 2960 -1620 2960 -1480 {
-lab=#net2}
-N 2980 -1620 2980 -1480 {
-lab=#net3}
-N 3000 -1620 3000 -1480 {
 lab=#net4}
-N 3020 -1620 3020 -1480 {
+N 2980 -1620 2980 -1480 {
 lab=#net5}
-N 3040 -1620 3040 -1480 {
+N 3000 -1620 3000 -1480 {
 lab=#net6}
+N 3020 -1620 3020 -1480 {
+lab=#net7}
+N 3040 -1620 3040 -1480 {
+lab=#net8}
 N 3060 -1620 3060 -1480 {
 lab=EOC}
 N 3240 -600 3380 -600 {
@@ -242,37 +242,41 @@ lab=VOUTP}
 N 2040 -900 2140 -900 {
 lab=VOUTN}
 N 2690 -1600 2920 -1600 {
-lab=#net1}
+lab=#net3}
 N 2720 -1580 2920 -1580 {
-lab=#net2}
+lab=#net4}
 N 2720 -1580 2720 -1550 {
-lab=#net2}
+lab=#net4}
 N 2690 -1550 2720 -1550 {
-lab=#net2}
+lab=#net4}
 N 2750 -1560 2920 -1560 {
-lab=#net3}
+lab=#net5}
 N 2750 -1560 2750 -1500 {
-lab=#net3}
+lab=#net5}
 N 2690 -1500 2750 -1500 {
-lab=#net3}
+lab=#net5}
 N 2780 -1540 2920 -1540 {
-lab=#net4}
+lab=#net6}
 N 2780 -1540 2780 -1450 {
-lab=#net4}
+lab=#net6}
 N 2690 -1450 2780 -1450 {
-lab=#net4}
+lab=#net6}
 N 2810 -1520 2920 -1520 {
-lab=#net5}
+lab=#net7}
 N 2810 -1520 2810 -1400 {
-lab=#net5}
+lab=#net7}
 N 2690 -1400 2810 -1400 {
-lab=#net5}
+lab=#net7}
 N 2840 -1500 2920 -1500 {
-lab=#net6}
+lab=#net8}
 N 2840 -1500 2840 -1350 {
-lab=#net6}
+lab=#net8}
 N 2690 -1350 2840 -1350 {
-lab=#net6}
+lab=#net8}
+N 2730 -910 2730 -880 {
+lab=#net2}
+N 2730 -880 2740 -880 {
+lab=#net2}
 C {devices/vsource.sym} 60 -230 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/vsource.sym} 160 -230 0 0 {name=VPLL value="pulse(0 3.3 0 1n 1n 10n 20n)" savecurrent=false}
 C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
@@ -333,7 +337,7 @@ value=".include $::180MCU_MODELS/design.ngspice
 C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
 C {devices/lab_pin.sym} 160 -300 0 0 {name=p2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2660 -860 0 0 {name=p5 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 2740 -880 0 0 {name=p7 sig_type=std_logic lab=XRST}
+C {devices/lab_pin.sym} 2650 -910 0 0 {name=p7 sig_type=std_logic lab=XRST}
 C {devices/lab_pin.sym} 420 -300 0 0 {name=p9 sig_type=std_logic lab=XRST}
 C {devices/gnd.sym} 420 -200 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 420 -230 0 0 {name=V3 value="pwl(0 0 100n 0 101n 3.3)" savecurrent=false}
@@ -426,4 +430,5 @@ C {io_bi_t.sym} 2650 -1490 0 1 {name=x8 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PD
 C {io_bi_t.sym} 2650 -1440 0 1 {name=x9 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1390 0 1 {name=x10 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
 C {io_bi_t.sym} 2650 -1340 0 1 {name=x11 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
+C {io_in_c.sym} 2690 -910 0 0 {name=x12 DVDD=DVDD DVSS=DVSS PD=0 PU=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
 C {io_in_c.sym} 2700 -860 0 0 {name=x6 DVDD=DVDD DVSS=DVSS PD=0 PU=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__ }
