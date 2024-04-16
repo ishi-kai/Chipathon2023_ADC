@@ -25,6 +25,9 @@ if __name__ == '__main__':
 	bits_file = "vout_result_CArrayideal.csv"
 	bits_file_d = open(bits_file, mode='w')
 
+	res_vin_volt_plot = []
+	res_ref_volt_plot = []
+	res_cnt = []
 
 	bits_file_d.write("vin,adc\n")
 	for vin_cnt in range(0, len(result_list)):
@@ -42,3 +45,17 @@ if __name__ == '__main__':
 		result_list[vin_cnt]
 		print("vin=" + str(volt_list[0]) + " adc=" + str(cal_data * ref_volt))
 		bits_file_d.write(str(volt_list[0]) + "," + str(cal_data * ref_volt) + "\n")
+		res_vin_volt_plot.append(volt_list[0])
+		res_ref_volt_plot.append(cal_data * ref_volt)
+		res_cnt.append(vin_cnt)
+
+	plt.plot(res_cnt, res_vin_volt_plot, color = 'green', marker = 'x', linestyle = '-.', label = 'Gain')
+	plt.plot(res_cnt, res_ref_volt_plot, color = 'yellow', marker = '+', linestyle = '-.', label = 'Gain')
+	view_title = "Vin-ADC"
+	plt.title(view_title)
+	plt.xlabel('V')
+	plt.ylabel('cnt')
+	plt.grid(True)
+	plt.legend()
+	plt.savefig("vin_vout_result.png")
+	plt.clf()
