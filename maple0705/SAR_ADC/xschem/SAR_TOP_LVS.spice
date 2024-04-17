@@ -1,0 +1,63 @@
+** sch_path: /home/maple0705/design/Git/Chipathon2023/maple0705/SAR_ADC/xschem/SAR_TOP_LVS.sch
+.subckt SAR_TOP_LVS VIN XRST CLK DIGITAL_OUT[5] DIGITAL_OUT[4] DIGITAL_OUT[3] DIGITAL_OUT[2] DIGITAL_OUT[1] DIGITAL_OUT[0] EOC VDD
++ VSS
+*.PININFO VIN:I XRST:I CLK:I DIGITAL_OUT[5:0]:O EOC:O VDD:B VSS:B
+x_SAR_LOGIC CLK net10 net1 DIGITAL_OUT[0] DIGITAL_OUT[1] DIGITAL_OUT[2] DIGITAL_OUT[3] DIGITAL_OUT[4] DIGITAL_OUT[5] EOC XRST net9
++ net2 net3 net4 net5 net6 net7 net8 VDD VSS user_proj_sarlogic
+xCDAC_CAP net15 net14 net19 net17 net13 net18 net16 net20 CAP_ARRAY
+xComp VDD net10 net12 net11 VIN net20 VSS COMP
+xSW_SDAC0 VDD net2 VSS net16 VDD SW_CDAC_NEW
+xSW_SDAC1 VDD net3 VSS net15 VDD SW_CDAC_NEW
+xSW_SDAC2 VDD net4 VSS net14 VDD SW_CDAC_NEW
+xSW_SDAC3 VDD net5 VSS net13 VDD SW_CDAC_NEW
+xSW_SDAC4 VDD net6 VSS net17 VDD SW_CDAC_NEW
+xSW_SDAC5 VDD net7 VSS net18 VDD SW_CDAC_NEW
+xSW_SDAC6 VDD net8 VSS net19 VDD SW_CDAC_NEW
+xSW_SC VDD net9 VSS VSS net20 SW_CDAC_NEW
+xLATCH VDD net21 net1 net11 net12 VSS LATCH
+.ends
+
+* expanding   symbol:  design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym # of pins=5
+** sym_path: /home/maple0705/design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sym
+** sch_path: /home/maple0705/design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW.sch
+.subckt SW_CDAC_NEW VDD Vctrl GND Vout Vin
+*.PININFO Vctrl:I Vin:I Vout:O VDD:I GND:I
+XM1 Vin net1 Vout VDD pfet_03v3 L=0.28u W=28u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 Vin Vctrl Vout GND nfet_03v3 L=0.28u W=28u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM3 net1 Vctrl VDD VDD pfet_03v3 L=0.28u W=28u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 net1 Vctrl GND GND nfet_03v3 L=0.28u W=28u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM5 Vout net1 GND GND nfet_03v3 L=0.28u W=28u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  design/Git/Chipathon2023/latch/LATCH.sym # of pins=6
+** sym_path: /home/maple0705/design/Git/Chipathon2023/latch/LATCH.sym
+** sch_path: /home/maple0705/design/Git/Chipathon2023/latch/LATCH.sch
+.subckt LATCH VDD Qn Q R S GND
+*.PININFO Q:O Qn:O GND:I VDD:I S:I R:I
+x1 VDD Qn Q GND inv
+x2 VDD Q Qn GND inv
+XM1 Qn S GND GND nfet_03v3 L=0.28u W=28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 Q R GND GND nfet_03v3 L=0.28u W=28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+
+* expanding   symbol:  design/Git/Chipathon2023/inverter/inv.sym # of pins=4
+** sym_path: /home/maple0705/design/Git/Chipathon2023/inverter/inv.sym
+** sch_path: /home/maple0705/design/Git/Chipathon2023/inverter/inv.sch
+.subckt inv VDD A Q GND
+*.PININFO A:I Q:O VDD:B GND:B
+XM1 Q A VDD VDD pfet_03v3 L=0.28u W=28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 Q A GND GND nfet_03v3 L=0.28u W=28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+.ends
+
+.end
