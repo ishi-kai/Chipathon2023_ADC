@@ -284,11 +284,13 @@ C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}
 C {devices/simulator_commands_shown.sym} 40 -1350 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
-value=".include ~/design/Git/Chipathon2023/maple0705/SAR_Logic/klayout/user_proj_sarlogic_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/maple0705/SW_CDAC/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/cdac/mim_cap_array_8x8/rev001/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/latch/TOP_pex_extracted.spice
-.include ~/design/Git/Chipathon2023/gitefu/comp_20240331/TOP_pex_extracted.spice
+value="set ISHIKAI_ADC_PATH 
+puts $ISHIKAI_ADC_PATH ~/design/Git
+.include $ISHIKAI_ADC_PATH/maple0705/SAR_Logic/klayout/user_proj_sarlogic_pex_extracted.spice
+.include $ISHIKAI_ADC_PATH/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/maple0705/SW_CDAC/TOP_pex_extracted.spice
+.include $ISHIKAI_ADC_PATH/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/cdac/mim_cap_array_8x8/rev001/TOP_pex_extracted.spice
+.include $ISHIKAI_ADC_PATH/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/latch/TOP_pex_extracted.spice
+.include $ISHIKAI_ADC_PATH/media/tomoakitanaka/Documents/MyDocuments/personal/ISHIKAI/2024/Chipathon2023_ADC/gitefu/comp_20240331/TOP_pex_extracted.spice
 .temp 27
 .control
 save all
@@ -334,7 +336,7 @@ value=".include $::180MCU_MODELS/design.ngspice
 .lib $180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $180MCU_MODELS/sm141064.ngspice diode_typical
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice"}
-C {design/Git/Chipathon2023/maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
+C {../../../maple0705/SAR_Logic/xschem/user_proj_sarlogic.sym} 2970 -870 0 0 {name=x_SAR_LOGIC prefix=user_proj_sarlogic}
 C {devices/lab_pin.sym} 160 -300 0 0 {name=p2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2660 -860 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2650 -910 0 0 {name=p7 sig_type=std_logic lab=XRST}
@@ -350,16 +352,16 @@ C {devices/lab_pin.sym} 2950 -760 3 0 {name=p15 sig_type=std_logic lab=SDAC5}
 C {devices/lab_pin.sym} 2930 -760 3 0 {name=p16 sig_type=std_logic lab=SDAC6}
 C {devices/lab_pin.sym} 2890 -760 3 0 {name=p19 sig_type=std_logic lab=SC}
 C {devices/lab_pin.sym} 3280 -840 0 0 {name=p20 sig_type=std_logic lab=COMP_CLK}
-C {design/Git/Chipathon2023/cdac/mim_cap_array_8x8/rev001/advanced_mimcap_array8x8_15step.sym} 1350 -270 0 0 {name=xCDAC_CAP prefix=CAP_ARRAY}
-C {design/Git/Chipathon2023/gitefu/comp_20240331/comp_20240331.sym} 1850 -880 0 0 {name=xComp prefix=COMP}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 3060 -500 0 1 {name=xSW_SDAC0 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2840 -500 0 1 {name=xSW_SDAC1 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2620 -500 0 1 {name=xSW_SDAC2 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2400 -500 0 1 {name=xSW_SDAC3 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2180 -500 0 1 {name=xSW_SDAC4 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1960 -500 0 1 {name=xSW_SDAC5 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1740 -500 0 1 {name=xSW_SDAC6 prefix=SW_CDAC}
-C {design/Git/Chipathon2023/maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1500 -500 0 1 {name=xSW_SC prefix=SW_CDAC}
+C {../../../cdac/mim_cap_array_8x8/rev001/advanced_mimcap_array8x8_15step.sym} 1350 -270 0 0 {name=xCDAC_CAP prefix=CAP_ARRAY}
+C {../../../gitefu/comp_20240331/comp_20240331.sym} 1850 -880 0 0 {name=xComp prefix=COMP}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 3060 -500 0 1 {name=xSW_SDAC0 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2840 -500 0 1 {name=xSW_SDAC1 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2620 -500 0 1 {name=xSW_SDAC2 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2400 -500 0 1 {name=xSW_SDAC3 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 2180 -500 0 1 {name=xSW_SDAC4 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1960 -500 0 1 {name=xSW_SDAC5 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1740 -500 0 1 {name=xSW_SDAC6 prefix=SW_CDAC}
+C {../../../maple0705/SW_CDAC/SW_CDAC_NEW_RC.sym} 1500 -500 0 1 {name=xSW_SC prefix=SW_CDAC}
 C {devices/gnd.sym} 1500 -440 0 1 {name=l4 lab=GND}
 C {devices/gnd.sym} 1740 -440 0 1 {name=l5 lab=GND}
 C {devices/gnd.sym} 1960 -440 0 1 {name=l6 lab=GND}
@@ -406,7 +408,7 @@ C {devices/lab_pin.sym} 1300 -860 0 1 {name=p36 sig_type=std_logic lab=VINN}
 C {devices/lab_pin.sym} 3260 -540 2 0 {name=p37 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2520 -920 2 0 {name=p38 sig_type=std_logic lab=Qn_LATCH}
 C {devices/lab_pin.sym} 2480 -820 0 0 {name=p39 sig_type=std_logic lab=COMP_OUT}
-C {design/Git/Chipathon2023/latch/latch_rc.sym} 2290 -890 0 0 {name=x1 prefix=LATCH}
+C {../../../latch/latch_rc.sym} 2290 -890 0 0 {name=x1 prefix=LATCH}
 C {devices/lab_pin.sym} 2610 -1590 0 0 {name=p18 sig_type=std_logic lab=DIGITAL_OUT[5]}
 C {devices/lab_pin.sym} 2610 -1540 0 0 {name=p21 sig_type=std_logic lab=DIGITAL_OUT[4]}
 C {devices/lab_pin.sym} 2610 -1490 0 0 {name=p40 sig_type=std_logic lab=DIGITAL_OUT[3]}
@@ -416,7 +418,7 @@ C {devices/lab_pin.sym} 2610 -1340 0 0 {name=p43 sig_type=std_logic lab=DIGITAL_
 C {devices/lab_pin.sym} 3060 -1500 2 0 {name=p17 sig_type=std_logic lab=EOC}
 C {devices/gnd.sym} 3200 -440 0 1 {name=l17 lab=GND}
 C {devices/vdd.sym} 3200 -480 0 0 {name=l21 lab=VDD}
-C {design/Git/Chipathon2023/noritsuna/ldo/xschem/ldo.sym} 3350 -460 0 1 {name=xLDO}
+C {../../../noritsuna/ldo/xschem/ldo.sym} 3350 -460 0 1 {name=xLDO}
 C {devices/vsource.sym} 3380 -570 0 0 {name=Vref value=3.3 savecurrent=false}
 C {devices/gnd.sym} 3380 -540 0 0 {name=l23 lab=GND}
 C {io_bi_t.sym} 2650 -1590 0 1 {name=x2 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__}
