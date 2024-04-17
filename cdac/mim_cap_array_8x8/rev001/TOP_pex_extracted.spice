@@ -1,70 +1,70 @@
 * NGSPICE file created from TOP.ext - technology: gf180mcuD
 
-.subckt TOP top_c5 top_c3 top_c2 top_c4 top_c0 top_c1 top_c_dummy common_bottom
-X0 top_c5.t0 common_bottom.t56 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X1 top_c3.t0 common_bottom.t13 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X2 top_c5.t1 common_bottom.t55 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X3 top_c3.t1 common_bottom.t61 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X4 top_c4.t0 common_bottom.t21 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X5 top_c5.t2 common_bottom.t54 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X6 top_c5.t3 common_bottom.t53 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X7 top_c5.t4 common_bottom.t52 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X8 top_c5.t5 common_bottom.t51 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X9 top_c0.t0 common_bottom.t14 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X10 top_c5.t6 common_bottom.t50 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X11 top_c3.t2 common_bottom.t2 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X12 top_c5.t7 common_bottom.t49 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+.subckt TOP top_c0 top_c1 top_c5 top_c3 top_c2 top_c4 top_c_dummy common_bottom
+X0 top_c5.t0 common_bottom.t62 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X1 top_c3.t0 common_bottom.t7 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X2 top_c5.t1 common_bottom.t61 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X3 top_c3.t1 common_bottom.t10 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X4 top_c4.t0 common_bottom.t27 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X5 top_c5.t2 common_bottom.t60 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X6 top_c5.t3 common_bottom.t59 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X7 top_c5.t4 common_bottom.t58 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X8 top_c5.t5 common_bottom.t57 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X9 top_c1.t0 common_bottom.t11 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X10 top_c5.t6 common_bottom.t56 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X11 top_c3.t2 common_bottom.t19 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X12 top_c5.t7 common_bottom.t55 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
 X13 top_c3.t3 common_bottom.t1 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X14 top_c5.t8 common_bottom.t48 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X15 top_c5.t9 common_bottom.t47 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X16 top_c2.t0 common_bottom.t11 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X17 top_c5.t10 common_bottom.t46 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X18 top_c4.t1 common_bottom.t9 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X19 top_c3.t4 common_bottom.t7 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X20 top_c4.t2 common_bottom.t16 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X21 top_c5.t11 common_bottom.t45 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X22 top_c5.t12 common_bottom.t44 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X23 top_c5.t13 common_bottom.t43 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X24 top_c4.t3 common_bottom.t62 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X25 top_c4.t4 common_bottom.t15 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X26 top_c4.t5 common_bottom.t59 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X27 top_c5.t14 common_bottom.t42 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X28 top_c5.t15 common_bottom.t41 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X29 top_c4.t6 common_bottom.t23 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X14 top_c5.t8 common_bottom.t54 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X15 top_c5.t9 common_bottom.t53 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X16 top_c2.t0 common_bottom.t0 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X17 top_c5.t10 common_bottom.t52 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X18 top_c4.t1 common_bottom.t15 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X19 top_c3.t4 common_bottom.t20 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X20 top_c4.t2 common_bottom.t13 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X21 top_c5.t11 common_bottom.t51 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X22 top_c5.t12 common_bottom.t50 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X23 top_c5.t13 common_bottom.t49 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X24 top_c4.t3 common_bottom.t30 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X25 top_c4.t4 common_bottom.t25 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X26 top_c4.t5 common_bottom.t9 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X27 top_c5.t14 common_bottom.t48 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X28 top_c5.t15 common_bottom.t47 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X29 top_c4.t6 common_bottom.t2 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
 X30 top_c4.t7 common_bottom.t63 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X31 top_c5.t16 common_bottom.t40 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X32 top_c5.t17 common_bottom.t39 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X33 top_c5.t18 common_bottom.t38 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X34 top_c4.t8 common_bottom.t5 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X35 top_c2.t1 common_bottom.t0 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X36 top_c4.t9 common_bottom.t20 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X37 top_c5.t19 common_bottom.t37 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X38 top_c_dummy.t0 common_bottom.t12 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X39 top_c5.t20 common_bottom.t36 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X40 top_c2.t2 common_bottom.t60 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X41 top_c5.t21 common_bottom.t35 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X42 top_c0.t1 common_bottom.t3 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X43 top_c5.t22 common_bottom.t34 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X44 top_c4.t10 common_bottom.t58 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X45 top_c5.t23 common_bottom.t33 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X46 top_c1.t0 common_bottom.t19 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X47 top_c5.t24 common_bottom.t32 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X48 top_c4.t11 common_bottom.t22 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X49 top_c4.t12 common_bottom.t57 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X50 top_c5.t25 common_bottom.t31 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X51 top_c3.t5 common_bottom.t17 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X52 top_c4.t13 common_bottom.t6 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X53 top_c4.t14 common_bottom.t8 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X54 top_c5.t26 common_bottom.t30 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X55 top_c5.t27 common_bottom.t29 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X56 top_c3.t6 common_bottom.t10 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X57 top_c4.t15 common_bottom.t4 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X58 top_c5.t28 common_bottom.t28 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X59 top_c5.t29 common_bottom.t27 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X60 top_c5.t30 common_bottom.t26 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X61 top_c3.t7 common_bottom.t24 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X62 top_c2.t3 common_bottom.t18 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
-X63 top_c5.t31 common_bottom.t25 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X31 top_c5.t16 common_bottom.t46 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X32 top_c5.t17 common_bottom.t45 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X33 top_c5.t18 common_bottom.t44 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X34 top_c4.t8 common_bottom.t22 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X35 top_c2.t1 common_bottom.t28 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X36 top_c4.t9 common_bottom.t23 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X37 top_c5.t19 common_bottom.t43 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X38 top_c_dummy.t0 common_bottom.t17 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X39 top_c5.t20 common_bottom.t42 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X40 top_c2.t2 common_bottom.t18 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X41 top_c5.t21 common_bottom.t41 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X42 top_c1.t1 common_bottom.t4 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X43 top_c5.t22 common_bottom.t40 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X44 top_c4.t10 common_bottom.t8 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X45 top_c5.t23 common_bottom.t39 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X46 top_c0.t0 common_bottom.t21 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X47 top_c5.t24 common_bottom.t38 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X48 top_c4.t11 common_bottom.t14 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X49 top_c4.t12 common_bottom.t29 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X50 top_c5.t25 common_bottom.t37 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X51 top_c3.t5 common_bottom.t6 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X52 top_c4.t13 common_bottom.t12 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X53 top_c4.t14 common_bottom.t26 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X54 top_c5.t26 common_bottom.t36 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X55 top_c5.t27 common_bottom.t35 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X56 top_c3.t6 common_bottom.t5 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X57 top_c4.t15 common_bottom.t24 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X58 top_c5.t28 common_bottom.t34 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X59 top_c5.t29 common_bottom.t33 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X60 top_c5.t30 common_bottom.t32 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X61 top_c3.t7 common_bottom.t16 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X62 top_c2.t3 common_bottom.t3 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
+X63 top_c5.t31 common_bottom.t31 cap_mim_2f0_m4m5_noshield c_width=7u c_length=7u
 R0 top_c5.n198 top_c5.n197 39.854
 R1 top_c5.n183 top_c5.n182 5.2655
 R2 top_c5.n56 top_c5.n55 5.2655
@@ -388,119 +388,119 @@ R319 top_c5.n179 top_c5.n178 0.00264286
 R320 top_c5.n162 top_c5.n161 0.00264286
 R321 top_c5.n17 top_c5.n2 0.00264286
 R322 top_c5.n32 top_c5.n9 0.00264286
-R323 common_bottom common_bottom.t15 3.05781
-R324 common_bottom.t6 common_bottom.t1 1.23983
-R325 common_bottom.t1 common_bottom.t54 1.23983
-R326 common_bottom.t54 common_bottom.t32 1.23983
-R327 common_bottom.t32 common_bottom.t43 1.23983
-R328 common_bottom.t29 common_bottom.t43 1.23983
-R329 common_bottom.t42 common_bottom.t29 1.23983
-R330 common_bottom.t17 common_bottom.t51 1.23216
-R331 common_bottom.t60 common_bottom.t45 1.23216
-R332 common_bottom.t30 common_bottom.t2 1.23216
-R333 common_bottom.t44 common_bottom.t33 1.23216
-R334 common_bottom.t10 common_bottom.t11 1.23216
-R335 common_bottom.t62 common_bottom.t57 1.23216
-R336 common_bottom.t7 common_bottom.t28 1.23216
-R337 common_bottom.t51 common_bottom.t34 1.23216
-R338 common_bottom.t34 common_bottom.t55 1.23216
-R339 common_bottom.t49 common_bottom.t20 1.23216
-R340 common_bottom.t19 common_bottom.t21 1.23216
-R341 common_bottom.t46 common_bottom.t12 1.23216
-R342 common_bottom.t31 common_bottom.t14 1.23216
-R343 common_bottom.t8 common_bottom.t48 1.23216
-R344 common_bottom.t48 common_bottom.t0 1.23216
-R345 common_bottom.t41 common_bottom.t39 1.23216
-R346 common_bottom.t39 common_bottom.t52 1.23216
-R347 common_bottom.t36 common_bottom.t25 1.23216
-R348 common_bottom.t50 common_bottom.t5 1.23216
-R349 common_bottom.t58 common_bottom.t61 1.23216
-R350 common_bottom.t47 common_bottom.t37 1.23216
-R351 common_bottom.t22 common_bottom.t53 1.23216
-R352 common_bottom.t9 common_bottom.t35 1.23216
-R353 common_bottom.t56 common_bottom.t42 1.23216
-R354 common_bottom.t17 common_bottom.t45 1.2245
-R355 common_bottom.t30 common_bottom.t45 1.2245
-R356 common_bottom.t30 common_bottom.t44 1.2245
-R357 common_bottom.t44 common_bottom.t10 1.2245
-R358 common_bottom.t10 common_bottom.t62 1.2245
-R359 common_bottom.t28 common_bottom.t62 1.2245
-R360 common_bottom.t28 common_bottom.t42 1.2245
-R361 common_bottom.t20 common_bottom.t55 1.2245
-R362 common_bottom.t21 common_bottom.t20 1.2245
-R363 common_bottom.t12 common_bottom.t21 1.2245
-R364 common_bottom.t14 common_bottom.t12 1.2245
-R365 common_bottom.t3 common_bottom.t14 1.2245
-R366 common_bottom.t7 common_bottom.t29 1.2245
-R367 common_bottom.t7 common_bottom.t57 1.2245
-R368 common_bottom.t57 common_bottom.t11 1.2245
-R369 common_bottom.t11 common_bottom.t33 1.2245
-R370 common_bottom.t33 common_bottom.t2 1.2245
-R371 common_bottom.t2 common_bottom.t60 1.2245
-R372 common_bottom.t51 common_bottom.t60 1.2245
-R373 common_bottom.t34 common_bottom.t49 1.2245
-R374 common_bottom.t49 common_bottom.t60 1.2245
-R375 common_bottom.t49 common_bottom.t19 1.2245
-R376 common_bottom.t19 common_bottom.t2 1.2245
-R377 common_bottom.t19 common_bottom.t46 1.2245
-R378 common_bottom.t46 common_bottom.t33 1.2245
-R379 common_bottom.t46 common_bottom.t31 1.2245
-R380 common_bottom.t31 common_bottom.t11 1.2245
-R381 common_bottom.t16 common_bottom.t3 1.2245
-R382 common_bottom.t31 common_bottom.t16 1.2245
-R383 common_bottom.t16 common_bottom.t57 1.2245
-R384 common_bottom.t8 common_bottom.t43 1.2245
-R385 common_bottom.t16 common_bottom.t8 1.2245
-R386 common_bottom.t8 common_bottom.t7 1.2245
-R387 common_bottom.t48 common_bottom.t32 1.2245
-R388 common_bottom.t48 common_bottom.t3 1.2245
-R389 common_bottom.t0 common_bottom.t54 1.2245
-R390 common_bottom.t0 common_bottom.t13 1.2245
-R391 common_bottom.t13 common_bottom.t3 1.2245
-R392 common_bottom.t13 common_bottom.t38 1.2245
-R393 common_bottom.t38 common_bottom.t14 1.2245
-R394 common_bottom.t38 common_bottom.t18 1.2245
-R395 common_bottom.t18 common_bottom.t61 1.2245
-R396 common_bottom.t18 common_bottom.t12 1.2245
-R397 common_bottom.t18 common_bottom.t63 1.2245
-R398 common_bottom.t63 common_bottom.t21 1.2245
-R399 common_bottom.t63 common_bottom.t24 1.2245
-R400 common_bottom.t24 common_bottom.t20 1.2245
-R401 common_bottom.t24 common_bottom.t41 1.2245
-R402 common_bottom.t41 common_bottom.t55 1.2245
-R403 common_bottom.t52 common_bottom.t36 1.2245
-R404 common_bottom.t39 common_bottom.t25 1.2245
-R405 common_bottom.t24 common_bottom.t25 1.2245
-R406 common_bottom.t5 common_bottom.t61 1.2245
-R407 common_bottom.t25 common_bottom.t5 1.2245
-R408 common_bottom.t63 common_bottom.t5 1.2245
-R409 common_bottom.t36 common_bottom.t50 1.2245
-R410 common_bottom.t50 common_bottom.t58 1.2245
-R411 common_bottom.t47 common_bottom.t22 1.2245
-R412 common_bottom.t58 common_bottom.t47 1.2245
-R413 common_bottom.t61 common_bottom.t37 1.2245
-R414 common_bottom.t38 common_bottom.t37 1.2245
-R415 common_bottom.t37 common_bottom.t53 1.2245
-R416 common_bottom.t13 common_bottom.t53 1.2245
-R417 common_bottom.t1 common_bottom.t35 1.2245
-R418 common_bottom.t53 common_bottom.t35 1.2245
-R419 common_bottom.t0 common_bottom.t35 1.2245
-R420 common_bottom.t22 common_bottom.t9 1.2245
-R421 common_bottom.t9 common_bottom.t6 1.2245
-R422 common_bottom.t40 common_bottom.t56 1.2245
-R423 common_bottom.t28 common_bottom.t40 1.2245
-R424 common_bottom.t40 common_bottom.t26 1.2245
-R425 common_bottom.t26 common_bottom.t62 1.2245
-R426 common_bottom.t26 common_bottom.t23 1.2245
-R427 common_bottom.t23 common_bottom.t10 1.2245
-R428 common_bottom.t23 common_bottom.t27 1.2245
-R429 common_bottom.t27 common_bottom.t44 1.2245
-R430 common_bottom.t27 common_bottom.t59 1.2245
-R431 common_bottom.t59 common_bottom.t30 1.2245
-R432 common_bottom.t59 common_bottom.t4 1.2245
-R433 common_bottom.t45 common_bottom.t4 1.2245
-R434 common_bottom.t15 common_bottom.t4 1.2245
-R435 common_bottom.t15 common_bottom.t17 1.2245
+R323 common_bottom common_bottom.t25 3.05781
+R324 common_bottom.t12 common_bottom.t1 1.23983
+R325 common_bottom.t1 common_bottom.t60 1.23983
+R326 common_bottom.t60 common_bottom.t38 1.23983
+R327 common_bottom.t38 common_bottom.t49 1.23983
+R328 common_bottom.t35 common_bottom.t49 1.23983
+R329 common_bottom.t48 common_bottom.t35 1.23983
+R330 common_bottom.t6 common_bottom.t57 1.23216
+R331 common_bottom.t18 common_bottom.t51 1.23216
+R332 common_bottom.t36 common_bottom.t19 1.23216
+R333 common_bottom.t50 common_bottom.t39 1.23216
+R334 common_bottom.t5 common_bottom.t0 1.23216
+R335 common_bottom.t30 common_bottom.t29 1.23216
+R336 common_bottom.t20 common_bottom.t34 1.23216
+R337 common_bottom.t57 common_bottom.t40 1.23216
+R338 common_bottom.t40 common_bottom.t61 1.23216
+R339 common_bottom.t55 common_bottom.t23 1.23216
+R340 common_bottom.t21 common_bottom.t27 1.23216
+R341 common_bottom.t52 common_bottom.t17 1.23216
+R342 common_bottom.t37 common_bottom.t11 1.23216
+R343 common_bottom.t26 common_bottom.t54 1.23216
+R344 common_bottom.t54 common_bottom.t28 1.23216
+R345 common_bottom.t47 common_bottom.t45 1.23216
+R346 common_bottom.t45 common_bottom.t58 1.23216
+R347 common_bottom.t42 common_bottom.t31 1.23216
+R348 common_bottom.t56 common_bottom.t22 1.23216
+R349 common_bottom.t8 common_bottom.t10 1.23216
+R350 common_bottom.t53 common_bottom.t43 1.23216
+R351 common_bottom.t14 common_bottom.t59 1.23216
+R352 common_bottom.t15 common_bottom.t41 1.23216
+R353 common_bottom.t62 common_bottom.t48 1.23216
+R354 common_bottom.t6 common_bottom.t51 1.2245
+R355 common_bottom.t36 common_bottom.t51 1.2245
+R356 common_bottom.t36 common_bottom.t50 1.2245
+R357 common_bottom.t50 common_bottom.t5 1.2245
+R358 common_bottom.t5 common_bottom.t30 1.2245
+R359 common_bottom.t34 common_bottom.t30 1.2245
+R360 common_bottom.t34 common_bottom.t48 1.2245
+R361 common_bottom.t23 common_bottom.t61 1.2245
+R362 common_bottom.t27 common_bottom.t23 1.2245
+R363 common_bottom.t17 common_bottom.t27 1.2245
+R364 common_bottom.t11 common_bottom.t17 1.2245
+R365 common_bottom.t4 common_bottom.t11 1.2245
+R366 common_bottom.t20 common_bottom.t35 1.2245
+R367 common_bottom.t20 common_bottom.t29 1.2245
+R368 common_bottom.t29 common_bottom.t0 1.2245
+R369 common_bottom.t0 common_bottom.t39 1.2245
+R370 common_bottom.t39 common_bottom.t19 1.2245
+R371 common_bottom.t19 common_bottom.t18 1.2245
+R372 common_bottom.t57 common_bottom.t18 1.2245
+R373 common_bottom.t40 common_bottom.t55 1.2245
+R374 common_bottom.t55 common_bottom.t18 1.2245
+R375 common_bottom.t55 common_bottom.t21 1.2245
+R376 common_bottom.t21 common_bottom.t19 1.2245
+R377 common_bottom.t21 common_bottom.t52 1.2245
+R378 common_bottom.t52 common_bottom.t39 1.2245
+R379 common_bottom.t52 common_bottom.t37 1.2245
+R380 common_bottom.t37 common_bottom.t0 1.2245
+R381 common_bottom.t13 common_bottom.t4 1.2245
+R382 common_bottom.t37 common_bottom.t13 1.2245
+R383 common_bottom.t13 common_bottom.t29 1.2245
+R384 common_bottom.t26 common_bottom.t49 1.2245
+R385 common_bottom.t13 common_bottom.t26 1.2245
+R386 common_bottom.t26 common_bottom.t20 1.2245
+R387 common_bottom.t54 common_bottom.t38 1.2245
+R388 common_bottom.t54 common_bottom.t4 1.2245
+R389 common_bottom.t28 common_bottom.t60 1.2245
+R390 common_bottom.t28 common_bottom.t7 1.2245
+R391 common_bottom.t7 common_bottom.t4 1.2245
+R392 common_bottom.t7 common_bottom.t44 1.2245
+R393 common_bottom.t44 common_bottom.t11 1.2245
+R394 common_bottom.t44 common_bottom.t3 1.2245
+R395 common_bottom.t3 common_bottom.t10 1.2245
+R396 common_bottom.t3 common_bottom.t17 1.2245
+R397 common_bottom.t3 common_bottom.t63 1.2245
+R398 common_bottom.t63 common_bottom.t27 1.2245
+R399 common_bottom.t63 common_bottom.t16 1.2245
+R400 common_bottom.t16 common_bottom.t23 1.2245
+R401 common_bottom.t16 common_bottom.t47 1.2245
+R402 common_bottom.t47 common_bottom.t61 1.2245
+R403 common_bottom.t58 common_bottom.t42 1.2245
+R404 common_bottom.t45 common_bottom.t31 1.2245
+R405 common_bottom.t16 common_bottom.t31 1.2245
+R406 common_bottom.t22 common_bottom.t10 1.2245
+R407 common_bottom.t31 common_bottom.t22 1.2245
+R408 common_bottom.t63 common_bottom.t22 1.2245
+R409 common_bottom.t42 common_bottom.t56 1.2245
+R410 common_bottom.t56 common_bottom.t8 1.2245
+R411 common_bottom.t53 common_bottom.t14 1.2245
+R412 common_bottom.t8 common_bottom.t53 1.2245
+R413 common_bottom.t10 common_bottom.t43 1.2245
+R414 common_bottom.t44 common_bottom.t43 1.2245
+R415 common_bottom.t43 common_bottom.t59 1.2245
+R416 common_bottom.t7 common_bottom.t59 1.2245
+R417 common_bottom.t1 common_bottom.t41 1.2245
+R418 common_bottom.t59 common_bottom.t41 1.2245
+R419 common_bottom.t28 common_bottom.t41 1.2245
+R420 common_bottom.t14 common_bottom.t15 1.2245
+R421 common_bottom.t15 common_bottom.t12 1.2245
+R422 common_bottom.t46 common_bottom.t62 1.2245
+R423 common_bottom.t34 common_bottom.t46 1.2245
+R424 common_bottom.t46 common_bottom.t32 1.2245
+R425 common_bottom.t32 common_bottom.t30 1.2245
+R426 common_bottom.t32 common_bottom.t2 1.2245
+R427 common_bottom.t2 common_bottom.t5 1.2245
+R428 common_bottom.t2 common_bottom.t33 1.2245
+R429 common_bottom.t33 common_bottom.t50 1.2245
+R430 common_bottom.t33 common_bottom.t9 1.2245
+R431 common_bottom.t9 common_bottom.t36 1.2245
+R432 common_bottom.t9 common_bottom.t24 1.2245
+R433 common_bottom.t51 common_bottom.t24 1.2245
+R434 common_bottom.t25 common_bottom.t24 1.2245
+R435 common_bottom.t25 common_bottom.t6 1.2245
 R436 top_c3.n78 top_c3.n77 16.6385
 R437 top_c3.n55 top_c3.n54 5.10563
 R438 top_c3.n63 top_c3.n62 5.10563
@@ -807,33 +807,33 @@ R738 top_c4.n75 top_c4.n74 0.0253044
 R739 top_c4.n50 top_c4.n49 0.0253044
 R740 top_c4.n111 top_c4.n110 0.0171124
 R741 top_c4.n29 top_c4.n28 0.0166786
-R742 top_c0 top_c0.n16 15.7278
-R743 top_c0.n8 top_c0.n5 4.5005
-R744 top_c0.n9 top_c0.n8 4.5005
-R745 top_c0.n10 top_c0.n2 4.5005
-R746 top_c0.n3 top_c0.n2 4.5005
-R747 top_c0.n15 top_c0.n1 4.5005
-R748 top_c0.n16 top_c0.n15 4.5005
-R749 top_c0.n6 top_c0.n5 3.86303
-R750 top_c0.n7 top_c0.n4 2.26321
-R751 top_c0.n14 top_c0.n0 2.26321
-R752 top_c0.n12 top_c0.n11 2.26285
-R753 top_c0.n10 top_c0.n9 1.73063
-R754 top_c0.n14 top_c0.n13 1.43035
-R755 top_c0.n13 top_c0.n12 1.43035
-R756 top_c0.n7 top_c0.n6 1.43035
-R757 top_c0.n3 top_c0.n1 1.28063
-R758 top_c0.n13 top_c0.t0 0.122337
-R759 top_c0.n6 top_c0.t1 0.122337
-R760 top_c0.n9 top_c0.n4 0.0269027
-R761 top_c0.n5 top_c0.n4 0.0269027
-R762 top_c0.n11 top_c0.n3 0.0269027
-R763 top_c0.n11 top_c0.n10 0.0269027
-R764 top_c0.n16 top_c0.n0 0.0269027
-R765 top_c0.n1 top_c0.n0 0.0269027
-R766 top_c0.n12 top_c0.n2 0.0256609
-R767 top_c0.n15 top_c0.n14 0.0253044
-R768 top_c0.n8 top_c0.n7 0.0253044
+R742 top_c1 top_c1.n16 15.532
+R743 top_c1.n8 top_c1.n5 4.5005
+R744 top_c1.n9 top_c1.n8 4.5005
+R745 top_c1.n10 top_c1.n2 4.5005
+R746 top_c1.n3 top_c1.n2 4.5005
+R747 top_c1.n15 top_c1.n1 4.5005
+R748 top_c1.n16 top_c1.n15 4.5005
+R749 top_c1.n6 top_c1.n5 3.86303
+R750 top_c1.n7 top_c1.n4 2.26321
+R751 top_c1.n14 top_c1.n0 2.26321
+R752 top_c1.n12 top_c1.n11 2.26285
+R753 top_c1.n10 top_c1.n9 1.73063
+R754 top_c1.n14 top_c1.n13 1.43035
+R755 top_c1.n13 top_c1.n12 1.43035
+R756 top_c1.n7 top_c1.n6 1.43035
+R757 top_c1.n3 top_c1.n1 1.28063
+R758 top_c1.n13 top_c1.t0 0.122337
+R759 top_c1.n6 top_c1.t1 0.122337
+R760 top_c1.n9 top_c1.n4 0.0269027
+R761 top_c1.n5 top_c1.n4 0.0269027
+R762 top_c1.n11 top_c1.n3 0.0269027
+R763 top_c1.n11 top_c1.n10 0.0269027
+R764 top_c1.n16 top_c1.n0 0.0269027
+R765 top_c1.n1 top_c1.n0 0.0269027
+R766 top_c1.n12 top_c1.n2 0.0256609
+R767 top_c1.n15 top_c1.n14 0.0253044
+R768 top_c1.n8 top_c1.n7 0.0253044
 R769 top_c2.n20 top_c2.t0 13.6405
 R770 top_c2.n28 top_c2.n27 13.5077
 R771 top_c2.n28 top_c2.n16 10.8694
@@ -890,71 +890,71 @@ R821 top_c_dummy.n2 top_c_dummy.t0 0.122337
 R822 top_c_dummy.n5 top_c_dummy.n0 0.0269027
 R823 top_c_dummy.n1 top_c_dummy.n0 0.0269027
 R824 top_c_dummy.n4 top_c_dummy.n3 0.0256609
-R825 top_c1 top_c1.n5 8.97918
-R826 top_c1.n4 top_c1.n1 4.5005
-R827 top_c1.n5 top_c1.n4 4.5005
-R828 top_c1.n2 top_c1.n1 3.80963
-R829 top_c1.n3 top_c1.n0 2.26285
-R830 top_c1.n3 top_c1.n2 1.37695
-R831 top_c1.n2 top_c1.t0 0.122337
-R832 top_c1.n5 top_c1.n0 0.0269027
-R833 top_c1.n1 top_c1.n0 0.0269027
-R834 top_c1.n4 top_c1.n3 0.0256609
-C0 top_c3 common_bottom 11.1152f
-C1 common_bottom m3_1090_37400 0.97368f
-C2 top_c5 top_c2 2.34498f
-C3 top_c1 top_c4 0.47261f
-C4 top_c5 common_bottom 33.806698f
-C5 m3_16090_37400 common_bottom 0.971673f
-C6 top_c3 top_c0 0.200626f
-C7 m3_9610_37600 top_c2 3.19116f
-C8 top_c5 top_c0 0.971104f
-C9 common_bottom m3_9610_37600 0.97376f
-C10 top_c_dummy top_c1 0.013558f
-C11 top_c3 m3_1090_37400 3.45276f
-C12 m3_n1905_37400 top_c4 3.43141f
-C13 top_c_dummy top_c4 0.491368f
-C14 top_c3 top_c5 3.3804f
-C15 top_c3 m3_16090_37400 0.017098f
-C16 top_c5 m3_1090_37400 0.432815f
-C17 top_c5 m3_16090_37400 0.590451f
-C18 m3_13080_37400 top_c4 0.177159f
-C19 top_c3 m3_9610_37600 0.026795f
-C20 top_c1 top_c2 0.077876f
-C21 common_bottom top_c1 2.13473f
-C22 top_c5 m3_9610_37600 0.683089f
-C23 top_c2 top_c4 0.741784f
-C24 common_bottom top_c4 18.375599f
-C25 top_c1 top_c0 3.33484f
-C26 top_c_dummy top_c2 3.76834f
-C27 top_c0 top_c4 0.520991f
-C28 m3_n1905_37400 common_bottom 0.977097f
-C29 top_c3 top_c1 0.200621f
-C30 common_bottom top_c_dummy 2.08325f
-C31 top_c3 top_c4 5.20067f
-C32 m3_1090_37400 top_c4 0.152828f
-C33 top_c5 top_c1 1.05695f
-C34 m3_13080_37400 top_c2 0.028837f
-C35 top_c5 top_c4 9.36867f
-C36 m3_16090_37400 top_c4 3.84867f
-C37 common_bottom m3_13080_37400 1.11039f
-C38 top_c_dummy top_c0 0.569f
-C39 top_c3 m3_n1905_37400 0.245343f
-C40 top_c1 m3_9610_37600 0.135476f
-C41 top_c3 top_c_dummy 0.084329f
-C42 common_bottom top_c2 6.94043f
-C43 m3_9610_37600 top_c4 0.290507f
-C44 top_c5 m3_n1905_37400 0.719426f
-C45 top_c5 top_c_dummy 0.619868f
-C46 top_c3 m3_13080_37400 3.66429f
-C47 top_c0 top_c2 0.090243f
-C48 common_bottom top_c0 3.29289f
-C49 top_c5 m3_13080_37400 0.804262f
-C50 top_c3 top_c2 3.15711f
-C51 m3_1090_37400 top_c2 0.27095f
+R825 top_c0 top_c0.n5 8.81718
+R826 top_c0.n4 top_c0.n1 4.5005
+R827 top_c0.n5 top_c0.n4 4.5005
+R828 top_c0.n2 top_c0.n1 3.80963
+R829 top_c0.n3 top_c0.n0 2.26285
+R830 top_c0.n3 top_c0.n2 1.37695
+R831 top_c0.n2 top_c0.t0 0.122337
+R832 top_c0.n5 top_c0.n0 0.0269027
+R833 top_c0.n1 top_c0.n0 0.0269027
+R834 top_c0.n4 top_c0.n3 0.0256609
+C0 top_c4 top_c1 0.520991f
+C1 m3_9610_37600 top_c3 0.026795f
+C2 top_c4 m3_16090_37400 3.84867f
+C3 top_c0 m3_9610_37600 0.135476f
+C4 top_c2 top_c_dummy 3.76834f
+C5 top_c_dummy common_bottom 2.08325f
+C6 top_c5 top_c2 2.34498f
+C7 top_c5 common_bottom 33.806698f
+C8 top_c0 top_c3 0.200621f
+C9 m3_n1905_37400 common_bottom 0.977097f
+C10 top_c4 top_c2 0.741784f
+C11 m3_13080_37400 top_c2 0.028837f
+C12 top_c4 common_bottom 18.375599f
+C13 m3_13080_37400 common_bottom 1.11039f
+C14 top_c5 m3_9610_37600 0.683089f
+C15 top_c_dummy top_c3 0.084329f
+C16 top_c0 top_c_dummy 0.013558f
+C17 top_c4 m3_9610_37600 0.290507f
+C18 top_c2 m3_1090_37400 0.27095f
+C19 m3_1090_37400 common_bottom 0.97368f
+C20 top_c5 top_c3 3.3804f
+C21 m3_n1905_37400 top_c3 0.245343f
+C22 top_c5 top_c0 1.05695f
+C23 top_c4 top_c3 5.20067f
+C24 m3_13080_37400 top_c3 3.66429f
+C25 top_c4 top_c0 0.47261f
+C26 top_c5 top_c_dummy 0.619868f
+C27 m3_1090_37400 top_c3 3.45276f
+C28 top_c4 top_c_dummy 0.491368f
+C29 top_c2 top_c1 0.090243f
+C30 top_c5 m3_n1905_37400 0.719426f
+C31 top_c1 common_bottom 3.29289f
+C32 top_c5 top_c4 9.36867f
+C33 top_c5 m3_13080_37400 0.804262f
+C34 top_c4 m3_n1905_37400 3.43141f
+C35 common_bottom m3_16090_37400 0.971673f
+C36 top_c4 m3_13080_37400 0.177159f
+C37 top_c5 m3_1090_37400 0.432815f
+C38 top_c1 top_c3 0.200626f
+C39 top_c2 common_bottom 6.94043f
+C40 top_c0 top_c1 3.33484f
+C41 top_c4 m3_1090_37400 0.152828f
+C42 top_c3 m3_16090_37400 0.017098f
+C43 top_c2 m3_9610_37600 3.19116f
+C44 m3_9610_37600 common_bottom 0.97376f
+C45 top_c1 top_c_dummy 0.569f
+C46 top_c2 top_c3 3.15711f
+C47 top_c5 top_c1 0.971104f
+C48 top_c3 common_bottom 11.1152f
+C49 top_c0 top_c2 0.077876f
+C50 top_c0 common_bottom 2.13473f
+C51 top_c5 m3_16090_37400 0.590451f
 C52 common_bottom VSUBS 80.35331f
-C53 top_c1 VSUBS 7.865008f
-C54 top_c0 VSUBS 9.978719f
+C53 top_c0 VSUBS 7.874328f
+C54 top_c1 VSUBS 9.984076f
 C55 top_c_dummy VSUBS 8.040878f
 C56 top_c2 VSUBS 19.660772f
 C57 top_c3 VSUBS 29.157608f
@@ -965,12 +965,12 @@ C61 m3_13080_37400 VSUBS 4.84066f $ **FLOATING
 C62 m3_9610_37600 VSUBS 4.70657f $ **FLOATING
 C63 m3_1090_37400 VSUBS 4.77027f $ **FLOATING
 C64 m3_n1905_37400 VSUBS 4.74427f $ **FLOATING
-C65 top_c1.n1 VSUBS -1.04934f
-C66 top_c1.t0 VSUBS 3.63772f
-C67 top_c1.n2 VSUBS 1.65722f
-C68 top_c1.n3 VSUBS 0.047436f
-C69 top_c1.n4 VSUBS 0.031183f
-C70 top_c1.n5 VSUBS 0.546014f
+C65 top_c0.n1 VSUBS -1.04934f
+C66 top_c0.t0 VSUBS 3.63772f
+C67 top_c0.n2 VSUBS 1.65722f
+C68 top_c0.n3 VSUBS 0.047436f
+C69 top_c0.n4 VSUBS 0.031183f
+C70 top_c0.n5 VSUBS 0.536695f
 C71 top_c_dummy.n1 VSUBS -0.759566f
 C72 top_c_dummy.t0 VSUBS 3.45403f
 C73 top_c_dummy.n2 VSUBS 1.73536f
@@ -1005,22 +1005,22 @@ C101 top_c2.n25 VSUBS 0.032549f
 C102 top_c2.n26 VSUBS 0.021397f
 C103 top_c2.n27 VSUBS 0.472165f
 C104 top_c2.n28 VSUBS 0.97149f
-C105 top_c0.n1 VSUBS 0.047889f
-C106 top_c0.t0 VSUBS 1.72993f
-C107 top_c0.n2 VSUBS 0.014829f
-C108 top_c0.n3 VSUBS 0.049051f
-C109 top_c0.n5 VSUBS -0.135571f
-C110 top_c0.t1 VSUBS 1.72993f
-C111 top_c0.n6 VSUBS 0.990212f
-C112 top_c0.n7 VSUBS 0.024838f
-C113 top_c0.n8 VSUBS 0.014618f
-C114 top_c0.n9 VSUBS 0.061366f
-C115 top_c0.n10 VSUBS 0.060193f
-C116 top_c0.n12 VSUBS 0.024631f
-C117 top_c0.n13 VSUBS 1.06733f
-C118 top_c0.n14 VSUBS 0.024838f
-C119 top_c0.n15 VSUBS 0.014618f
-C120 top_c0.n16 VSUBS 0.444289f
+C105 top_c1.n1 VSUBS 0.047889f
+C106 top_c1.t0 VSUBS 1.72993f
+C107 top_c1.n2 VSUBS 0.014829f
+C108 top_c1.n3 VSUBS 0.049051f
+C109 top_c1.n5 VSUBS -0.135571f
+C110 top_c1.t1 VSUBS 1.72993f
+C111 top_c1.n6 VSUBS 0.990212f
+C112 top_c1.n7 VSUBS 0.024838f
+C113 top_c1.n8 VSUBS 0.014618f
+C114 top_c1.n9 VSUBS 0.061366f
+C115 top_c1.n10 VSUBS 0.060193f
+C116 top_c1.n12 VSUBS 0.024631f
+C117 top_c1.n13 VSUBS 1.06733f
+C118 top_c1.n14 VSUBS 0.024838f
+C119 top_c1.n15 VSUBS 0.014618f
+C120 top_c1.n16 VSUBS 0.438932f
 C121 top_c4.n1 VSUBS 0.035791f
 C122 top_c4.n4 VSUBS 0.035634f
 C123 top_c4.n5 VSUBS 0.010341f
@@ -1208,77 +1208,77 @@ C304 top_c3.n75 VSUBS 0.038756f
 C305 top_c3.n76 VSUBS 0.016362f
 C306 top_c3.n77 VSUBS 0.451776f
 C307 top_c3.n78 VSUBS 0.656944f
-C308 common_bottom.t4 VSUBS 1.16727f
-C309 common_bottom.t45 VSUBS 1.2507f
-C310 common_bottom.t60 VSUBS 1.25388f
-C311 common_bottom.t55 VSUBS 1.16568f
-C312 common_bottom.t20 VSUBS 1.2507f
-C313 common_bottom.t21 VSUBS 1.2507f
-C314 common_bottom.t2 VSUBS 1.25388f
-C315 common_bottom.t12 VSUBS 1.2507f
-C316 common_bottom.t33 VSUBS 1.25388f
-C317 common_bottom.t14 VSUBS 1.2507f
-C318 common_bottom.t11 VSUBS 1.25388f
-C319 common_bottom.t3 VSUBS 1.25229f
-C320 common_bottom.t57 VSUBS 1.25388f
-C321 common_bottom.t43 VSUBS 1.16727f
-C322 common_bottom.t29 VSUBS 1.16727f
-C323 common_bottom.t62 VSUBS 1.2507f
-C324 common_bottom.t42 VSUBS 1.16568f
-C325 common_bottom.t56 VSUBS 1.08384f
-C326 common_bottom.t10 VSUBS 1.2507f
-C327 common_bottom.t44 VSUBS 1.2507f
-C328 common_bottom.t30 VSUBS 1.2507f
-C329 common_bottom.t59 VSUBS 1.16727f
-C330 common_bottom.t27 VSUBS 1.16727f
-C331 common_bottom.t23 VSUBS 1.16727f
-C332 common_bottom.t26 VSUBS 1.16727f
-C333 common_bottom.t40 VSUBS 1.16727f
-C334 common_bottom.t28 VSUBS 1.2507f
-C335 common_bottom.t7 VSUBS 1.25388f
-C336 common_bottom.t32 VSUBS 1.16727f
-C337 common_bottom.t54 VSUBS 1.16727f
-C338 common_bottom.t35 VSUBS 1.2507f
-C339 common_bottom.t53 VSUBS 1.25388f
-C340 common_bottom.t37 VSUBS 1.25388f
-C341 common_bottom.t61 VSUBS 1.2507f
-C342 common_bottom.t5 VSUBS 1.2507f
-C343 common_bottom.t25 VSUBS 1.25388f
+C308 common_bottom.t24 VSUBS 1.16727f
+C309 common_bottom.t51 VSUBS 1.2507f
+C310 common_bottom.t18 VSUBS 1.25388f
+C311 common_bottom.t61 VSUBS 1.16568f
+C312 common_bottom.t23 VSUBS 1.2507f
+C313 common_bottom.t27 VSUBS 1.2507f
+C314 common_bottom.t19 VSUBS 1.25388f
+C315 common_bottom.t17 VSUBS 1.2507f
+C316 common_bottom.t39 VSUBS 1.25388f
+C317 common_bottom.t11 VSUBS 1.2507f
+C318 common_bottom.t0 VSUBS 1.25388f
+C319 common_bottom.t4 VSUBS 1.25229f
+C320 common_bottom.t29 VSUBS 1.25388f
+C321 common_bottom.t49 VSUBS 1.16727f
+C322 common_bottom.t35 VSUBS 1.16727f
+C323 common_bottom.t30 VSUBS 1.2507f
+C324 common_bottom.t48 VSUBS 1.16568f
+C325 common_bottom.t62 VSUBS 1.08384f
+C326 common_bottom.t5 VSUBS 1.2507f
+C327 common_bottom.t50 VSUBS 1.2507f
+C328 common_bottom.t36 VSUBS 1.2507f
+C329 common_bottom.t9 VSUBS 1.16727f
+C330 common_bottom.t33 VSUBS 1.16727f
+C331 common_bottom.t2 VSUBS 1.16727f
+C332 common_bottom.t32 VSUBS 1.16727f
+C333 common_bottom.t46 VSUBS 1.16727f
+C334 common_bottom.t34 VSUBS 1.2507f
+C335 common_bottom.t20 VSUBS 1.25388f
+C336 common_bottom.t38 VSUBS 1.16727f
+C337 common_bottom.t60 VSUBS 1.16727f
+C338 common_bottom.t41 VSUBS 1.2507f
+C339 common_bottom.t59 VSUBS 1.25388f
+C340 common_bottom.t43 VSUBS 1.25388f
+C341 common_bottom.t10 VSUBS 1.2507f
+C342 common_bottom.t22 VSUBS 1.2507f
+C343 common_bottom.t31 VSUBS 1.25388f
 C344 common_bottom.t1 VSUBS 1.16727f
-C345 common_bottom.t6 VSUBS 1.08225f
-C346 common_bottom.t9 VSUBS 1.16886f
-C347 common_bottom.t22 VSUBS 1.16568f
-C348 common_bottom.t47 VSUBS 1.16568f
-C349 common_bottom.t58 VSUBS 1.16886f
-C350 common_bottom.t50 VSUBS 1.16886f
-C351 common_bottom.t36 VSUBS 1.16568f
-C352 common_bottom.t52 VSUBS 1.08066f
-C353 common_bottom.t39 VSUBS 1.17045f
-C354 common_bottom.t41 VSUBS 1.16568f
-C355 common_bottom.t24 VSUBS 1.25229f
+C345 common_bottom.t12 VSUBS 1.08225f
+C346 common_bottom.t15 VSUBS 1.16886f
+C347 common_bottom.t14 VSUBS 1.16568f
+C348 common_bottom.t53 VSUBS 1.16568f
+C349 common_bottom.t8 VSUBS 1.16886f
+C350 common_bottom.t56 VSUBS 1.16886f
+C351 common_bottom.t42 VSUBS 1.16568f
+C352 common_bottom.t58 VSUBS 1.08066f
+C353 common_bottom.t45 VSUBS 1.17045f
+C354 common_bottom.t47 VSUBS 1.16568f
+C355 common_bottom.t16 VSUBS 1.25229f
 C356 common_bottom.t63 VSUBS 1.25229f
-C357 common_bottom.t18 VSUBS 1.25229f
-C358 common_bottom.t38 VSUBS 1.25229f
-C359 common_bottom.t13 VSUBS 1.25229f
-C360 common_bottom.t0 VSUBS 1.25388f
-C361 common_bottom.t48 VSUBS 1.25229f
-C362 common_bottom.t8 VSUBS 1.2507f
-C363 common_bottom.t16 VSUBS 1.25229f
-C364 common_bottom.t31 VSUBS 1.25388f
-C365 common_bottom.t46 VSUBS 1.25388f
-C366 common_bottom.t19 VSUBS 1.25388f
-C367 common_bottom.t49 VSUBS 1.25388f
-C368 common_bottom.t34 VSUBS 1.17045f
-C369 common_bottom.t51 VSUBS 1.16727f
-C370 common_bottom.t17 VSUBS 1.16568f
-C371 common_bottom.t15 VSUBS 1.21451f
+C357 common_bottom.t3 VSUBS 1.25229f
+C358 common_bottom.t44 VSUBS 1.25229f
+C359 common_bottom.t7 VSUBS 1.25229f
+C360 common_bottom.t28 VSUBS 1.25388f
+C361 common_bottom.t54 VSUBS 1.25229f
+C362 common_bottom.t26 VSUBS 1.2507f
+C363 common_bottom.t13 VSUBS 1.25229f
+C364 common_bottom.t37 VSUBS 1.25388f
+C365 common_bottom.t52 VSUBS 1.25388f
+C366 common_bottom.t21 VSUBS 1.25388f
+C367 common_bottom.t55 VSUBS 1.25388f
+C368 common_bottom.t40 VSUBS 1.17045f
+C369 common_bottom.t57 VSUBS 1.16727f
+C370 common_bottom.t6 VSUBS 1.16568f
+C371 common_bottom.t25 VSUBS 1.21451f
 C372 top_c5.n2 VSUBS 0.075379f
 C373 top_c5.n9 VSUBS 0.075379f
 C374 top_c5.t6 VSUBS 0.692975f
 C375 top_c5.n16 VSUBS 0.487389f
 C376 top_c5.n17 VSUBS 0.201528f
 C377 top_c5.t31 VSUBS 0.692975f
-C378 top_c5.n18 VSUBS 0.618598f
+C378 top_c5.n18 VSUBS 0.618599f
 C379 top_c5.t7 VSUBS 0.692975f
 C380 top_c5.n19 VSUBS 0.58905f
 C381 top_c5.t5 VSUBS 1.25799f
