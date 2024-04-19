@@ -30,7 +30,7 @@
     - ![LATCH](./images/LATCH.png)  
     - ![Inv](./images/Inv.png)  
   - Design of the comparator
-    - https://github.com/ishi-kai/Chipathon2023_ADC/tree/creating-a-comparator-for-ADC/gitefu/comp_20240331
+    - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/gitefu/comp_20240331
     - ![Comparator](./images/comp_20240331.png)  
   - Unused/Tentative design material
       - LDO: https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/noritsuna/ldo
