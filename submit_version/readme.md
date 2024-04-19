@@ -29,7 +29,7 @@
 
 ## Miscellaneous:  
   - Top-level schematic of the A/D converter integrating all subblocks 
-    -https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/maple0705/SAR_Logic/caravel/openlane
+    - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/maple0705/SAR_Logic/caravel/openlane
     - ![SAR_TOP_LVS](./images/SAR_TOP_LVS.png)  
   - Design of the MIM capacitor array  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
