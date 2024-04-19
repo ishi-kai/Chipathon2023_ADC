@@ -8,7 +8,7 @@
   - Block Diagram
   ![Block Figs](./images/PnR.png)
 
-  - Interface
+  - Interface and area
   ![Pins Layout](./images/layout_pin_placement.png)  
 
 ---
