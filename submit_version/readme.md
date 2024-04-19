@@ -16,7 +16,7 @@
 |tran_sar_logic.sch|schematic file for the unit-level verification of SAR logic||
 |tran_sar_adc.sch|Testbench for the integration of the overalll SAR A/D converter as shown in the figure below||
 
-![スクリーンショット 2024-04-06 23 34 44](https://github.com/ishi-kai/Chipathon2023_ADC/assets/654720/e88be19a-a972-409c-b437-14064f13c3a3)
+![SAR-ADC Spec](./images/sar_adc_operating_waveform.png) 
 
 ## Miscellaneous:  
   - Top-level schematic of the A/D converter with the corresponding PEX extraction of SAR logic (*.spice file)  
