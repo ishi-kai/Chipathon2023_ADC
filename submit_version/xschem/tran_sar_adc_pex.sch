@@ -152,7 +152,7 @@ value=".include $::180MCU_MODELS/design.ngspice
 .lib $180MCU_MODELS/sm141064.ngspice mimcap_typical
 .lib $180MCU_MODELS/sm141064.ngspice diode_typical
 .include $::180MCU_STDCELLS/gf180mcu_fd_sc_mcu7t5v0.spice
-.include ~/pdk/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice"}
+.include $::180MCU_IOCELLS/gf180mcu_fd_io.spice"}
 C {devices/lab_pin.sym} 1160 -880 0 0 {name=p2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1040 -440 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1040 -420 0 0 {name=p7 sig_type=std_logic lab=XRST}
