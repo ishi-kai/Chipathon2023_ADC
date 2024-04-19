@@ -11,7 +11,7 @@
 | --- | --- | --- |
 |SW_CDAC.sch|switch component for each CDAC bit which is based the https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/transmission-gate/sw.sch|The only difference from the base sw.sch is the NMOS connected to the Vout port|
 |SW_CDAC.sym|symbol file made from the Sw_CDAC.sch||
-|user_proj_sarlogic.sym|symbol file used for the simulatin of [user_proj_sarlogic_pex_extracted.spice](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice)||
+|user_proj_sarlogic.sym|symbol file used for the simulatin of [user_proj_sarlogic_pex_extracted.spice](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR_Logic/caravel/openlane/user_proj_sarlogic.gds)||
 |user_proj_sarlogic.sch|blackbox module for making the symbol file of user_proj_sarlogic||
 |tran_sar_logic.sch|schematic file for the unit-level verification of SAR logic||
 |tran_sar_adc.sch|Testbench for the integration of the overalll SAR A/D converter as shown in the figure below||
