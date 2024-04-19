@@ -5,10 +5,10 @@
   - Layout and the contributor of each subblock/subsystem
   ![Parts Layout](./images/layout.jpg)
 
-  - Block Diagram
+  - Block Diagrams
   ![Block Figs](./images/PnR.png)
 
-  - Interface and area
+  - Interface and Area
   ![Pins Layout](./images/layout_pin_placement.png)  
 
 ---
@@ -34,7 +34,7 @@
   - Design of the MIM capacitor array  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
     - ![CDAC](./images/advanced_mimcap_array8x8_15step.png)  
-  - Design of the latch component
+  - Design of the latch components
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/latch  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/inverter
     - ![LATCH](./images/LATCH.png)  
