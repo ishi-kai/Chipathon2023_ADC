@@ -1,3 +1,10 @@
+# 提出用ファイル
+- [提出用GDSファイル](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/klayout/SAR_TOP.gds)
+- [LVS用schファイル](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/klayout/sar_adc_lvs.sch)
+
+  ![Full Layout](./images/layout.jpg)  
+
+# 各種説明
 - SW_CDAC.sch  
   https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/transmission-gate/sw.sch  
   を流用。Vout端子にぶらさがっているNMOSのみが↑との差分。
@@ -12,7 +19,8 @@
   SARロジック単体検証用回路図
 - tran_sar_adc.sch  
   SAR A/D 統合検証テストベンチ(結果が下図)![スクリーンショット 2024-04-06 23 34 44](https://github.com/ishi-kai/Chipathon2023_ADC/assets/654720/e88be19a-a972-409c-b437-14064f13c3a3)
-  他に必要な回路:  
+
+## 他に必要な回路:  
   - SARロジック抽出 .spice  
     https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice
   - 容量アレイ  
@@ -22,3 +30,6 @@
     https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/inverter
   - コンパレータ  
     https://github.com/ishi-kai/Chipathon2023_ADC/tree/creating-a-comparator-for-ADC/gitefu/comp_20240331
+  - 未使用
+      - LDO  
+        https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/noritsuna/ldo
