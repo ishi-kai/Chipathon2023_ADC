@@ -24,13 +24,18 @@
 
 ## Miscellaneous:  
   - PEX extraction of SAR logic (*.spice file)  
-    - https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice
+    - https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice    - ![SAR_TOP_LVS](./images/SAR_TOP_LVS.png)  
   - Design of the MIM capacitor array  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
+    - ![CDAC](./images/advanced_mimcap_array8x8_15step.png)  
   - Design of the latch component
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/latch  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/inverter
+    - ![LATCH](./images/LATCH.png)  
+    - ![Inv](./images/Inv.png)  
   - Design of the comparator
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/creating-a-comparator-for-ADC/gitefu/comp_20240331
+    - ![Comparator](./images/comp_20240331.png)  
   - Unused/Tentative design material
       - LDO: https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/noritsuna/ldo
+      - ![LDO](./images/ldo.png)  
