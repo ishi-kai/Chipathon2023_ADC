@@ -26,7 +26,7 @@ lab=vout}
 C {devices/code_shown.sym} 20 -690 0 0 {name=control only_toplevel=false value="
 *.option temp=27
 *.option tnom=27
-.include ~/ldo/TOP_pex_extracted.spice
+.include ~/LDO_pex_extracted.spice
 .control
 save all
 dc Vdd 3.0 3.6 0.1
