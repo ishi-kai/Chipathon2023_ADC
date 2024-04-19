@@ -1,5 +1,8 @@
 # ADC of [Chipathon2023](https://github.com/sscs-ose/DC23-LTC2)'s Japan Team
 
+## Submission files
+Click [here](https://github.com/ishi-kai/Chipathon2023_ADC/edit/main/submit_version) plz!
+
 ## Specification
 - Base Spec
     - 6bit SAR-ADC
