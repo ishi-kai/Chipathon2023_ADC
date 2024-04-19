@@ -52,7 +52,7 @@
     - [Maple0705](https://github.com/maple0705)
 
 
-## [SAR-Logic](https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/maple0705/SAR%20Logic)
+## [SAR-Logic](https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/maple0705/SAR_Logic)
 - Designer
     - [Maple0705](https://github.com/maple0705)
 
