@@ -19,7 +19,7 @@
 ![スクリーンショット 2024-04-06 23 34 44](https://github.com/ishi-kai/Chipathon2023_ADC/assets/654720/e88be19a-a972-409c-b437-14064f13c3a3)
 
 ## Miscellaneous:  
-  - PEX extraction of SAR logic (*.spice file)  
+  - Top-level schematic of the A/D converter with the corresponding PEX extraction of SAR logic (*.spice file)  
     - https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice    - ![SAR_TOP_LVS](./images/SAR_TOP_LVS.png)  
   - Design of the MIM capacitor array  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
