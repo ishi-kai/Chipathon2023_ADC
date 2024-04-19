@@ -2,9 +2,16 @@
 - [GDSII for tapeout](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/klayout/SAR_TOP.gds)
 - [Schematic file for LVS](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/xschem/sar_adc_lvs.sch)
 
-  ![Parts Layout](./images/layout.jpg)  
-  ![Block Figs](./images/PnR.png)  
+  - Layout and the contributor of each subblock/subsystem
+  ![Parts Layout](./images/layout.jpg)
+
+  - Block Diagram
+  ![Block Figs](./images/PnR.png)
+
+  - Interface
   ![Pins Layout](./images/layout_pin_placement.png)  
+
+---
 
 # Descriptoin of each design file
 | File | Purpose/Function | Remark |
@@ -17,6 +24,8 @@
 |tran_sar_adc.sch|Testbench for the integration of the overall SAR A/D converter as shown in the figure below||
 
 ![SAR-ADC Spec](./images/sar_adc_operating_waveform.png) 
+
+---
 
 ## Miscellaneous:  
   - Top-level schematic of the A/D converter integrating all subblocks 
