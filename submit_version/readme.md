@@ -1,6 +1,6 @@
 # Submission files
 - [GDSII for tapeout](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/klayout/SAR_TOP.gds)
-- [Schematic file for LVS](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/klayout/sar_adc_lvs.sch)
+- [Schematic file for LVS](https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/submit_version/xschem/sar_adc_lvs.sch)
 
   ![Parts Layout](./images/layout.jpg)  
   ![Block Figs](./images/PnR.png)  
