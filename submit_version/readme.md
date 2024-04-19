@@ -19,8 +19,9 @@
 ![SAR-ADC Spec](./images/sar_adc_operating_waveform.png) 
 
 ## Miscellaneous:  
-  - Top-level schematic of the A/D converter with the corresponding PEX extraction of SAR logic (*.spice file)  
-    - https://github.com/ishi-kai/Chipathon2023_ADC/blob/main/maple0705/SAR%20Logic/caravel/openlane/user_proj_sarlogic_pex_extracted.spice    - ![SAR_TOP_LVS](./images/SAR_TOP_LVS.png)  
+  - Top-level schematic of the A/D converter integrating all subblocks 
+    -https://github.com/ishi-kai/Chipathon2023_ADC/tree/main/maple0705/SAR_Logic/caravel/openlane
+    - ![SAR_TOP_LVS](./images/SAR_TOP_LVS.png)  
   - Design of the MIM capacitor array  
     - https://github.com/ishi-kai/Chipathon2023_ADC/tree/cdac_tseng/cdac/mim_cap_array_8x8
     - ![CDAC](./images/advanced_mimcap_array8x8_15step.png)  
