@@ -1,0 +1,39 @@
+v {xschem version=3.4.5 file_version=1.2
+* Copyright 2022 Stefan Frederik Schippers
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+}
+G {}
+K {type=primitive
+format="@name @@A @CS @DVDD @DVSS @IE @OE @@PAD @PD @PDRV0 @PDRV1 @PU @SL @VDD @VSS @@Y @prefix\\\\bi_t"
+template="name=x1 CS=0 DVDD=VDD DVSS=0 IE=0 OE=VDD PD=0 PDRV0=VDD PDRV1=VDD PU=0 SL=0 VDD=VDD VSS=0 prefix=gf180mcu_fd_io__"
+extra="CS DVDD DVSS IE OE PD PDRV0 PDRV1 PU SL VDD VSS prefix"
+highlight=true}
+V {}
+S {}
+E {}
+L 4 -20 -20 -20 20 {}
+L 4 20 0 40 0 {}
+L 4 -40 -10 -20 -10 {}
+L 4 20 -20 20 20 {}
+L 4 -20 20 20 20 {}
+L 4 -20 -20 20 -20 {}
+L 4 -40 10 -20 10 {}
+B 5 -42.5 -12.5 -37.5 -7.5 {name=A dir=in}
+B 5 37.5 -2.5 42.5 2.5 {name=PAD dir=inout }
+B 5 -42.5 7.5 -37.5 12.5 {name=Y dir=out}
+T {A} -35 -24 0 0 0.2 0.2 {}
+T {PAD} 35 -14 0 1 0.2 0.2 {}
+T {@name} 2.5 15 0 0 0.2 0.2 {}
+T {@symname} -7.5 -25 0 0 0.2 0.2 {}
+T {Y} -35 -4 0 0 0.2 0.2 {}

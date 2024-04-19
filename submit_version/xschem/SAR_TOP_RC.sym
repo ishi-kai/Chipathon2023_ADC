@@ -1,0 +1,54 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@VIN @@VSS @@VDD @@XRST @@CLK @@OUT[1] @@OUT[0] @@OUT[3] @@OUT[2] @@OUT[5] @@OUT[4] @@EOC @prefix"
+template="name=x1 prefix=SAR_TOP"
+extra="prefix"
+highlight=true
+}
+V {}
+S {}
+E {}
+L 4 20 -20 280 -20 {}
+L 4 20 100 280 100 {}
+L 4 20 -20 20 100 {}
+L 4 280 -20 280 100 {}
+L 4 0 80 20 80 {}
+L 4 280 -10 300 -10 {}
+L 4 0 40 20 40 {}
+L 4 280 90 300 90 {}
+L 4 0 60 20 60 {}
+L 4 -0 0 20 -0 {}
+L 4 0 20 20 20 {}
+L 4 280 0 300 0 {}
+L 4 280 10 300 10 {}
+L 4 280 20 300 20 {}
+L 4 280 30 300 30 {}
+L 4 280 40 300 40 {}
+B 5 -2.5 77.5 2.5 82.5 {name=XRST dir=in}
+B 5 297.5 -12.5 302.5 -7.5 {name=OUT[0] dir=out}
+B 5 -2.5 37.5 2.5 42.5 {name=VIN dir=in}
+B 5 297.5 87.5 302.5 92.5 {name=EOC dir=out}
+B 5 -2.5 57.5 2.5 62.5 {name=CLK dir=in}
+B 5 -2.5 -2.5 2.5 2.5 {name=VDD dir=inout}
+B 5 -2.5 17.5 2.5 22.5 {name=VSS dir=inout}
+B 5 297.5 -2.5 302.5 2.5 {name=OUT[1] dir=out}
+B 5 297.5 7.5 302.5 12.5 {name=OUT[2] dir=out}
+B 5 297.5 17.5 302.5 22.5 {name=OUT[3] dir=out}
+B 5 297.5 27.5 302.5 32.5 {name=OUT[4] dir=out}
+B 5 297.5 37.5 302.5 42.5 {name=OUT[5] dir=out}
+T {@symname} 102.5 44 0 0 0.3 0.3 {}
+T {@name} 105 -12 0 0 0.2 0.2 {}
+T {XRST} 25 76 0 0 0.2 0.2 {}
+T {OUT[0]} 275 -14 0 1 0.2 0.2 {}
+T {VIN} 25 36 0 0 0.2 0.2 {}
+T {EOC} 275 86 0 1 0.2 0.2 {}
+T {CLK} 25 56 0 0 0.2 0.2 {}
+T {VDD} 25 4 2 1 0.2 0.2 {}
+T {VSS} 25 24 2 1 0.2 0.2 {}
+T {OUT[1]} 275 -4 0 1 0.2 0.2 {}
+T {OUT[2]} 275 6 0 1 0.2 0.2 {}
+T {OUT[3]} 275 16 0 1 0.2 0.2 {}
+T {OUT[4]} 275 26 0 1 0.2 0.2 {}
+T {OUT[5]} 275 36 0 1 0.2 0.2 {}
