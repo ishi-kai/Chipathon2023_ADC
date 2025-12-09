@@ -98,5 +98,24 @@ Click [here](https://github.com/ishi-kai/Chipathon2023_ADC/edit/main/submit_vers
         - 4mA
 
 
+# WSL Image
+We provide a WSL image with an environment set up to run the circuit diagrams, simulations, layouts, DRC, and LVS mentioned above.  
+
+- [Image for circuit diagrams, simulations, layouts, and LVS](https://www.noritsuna.jp/download/ubuntu2204_chipathon2023_gf180.tar.xz)
+    - ID: ishi-kai
+    - Pass: ishi-kai
+
+## Installing WSL Images
+`wsl --import-in-place ubuntu2204_chipathon2023_gf180 .\ubuntu2204_chipathon2023_gf180\ext4.vhdx`
+
+The above command will be recognised. To execute it, please use the included "ubuntu2204_chipathon2023_gf180.lnk".  
+
+
+## Deleting WSL Images
+Please note that image files will also be deleted.  
+
+`wsl --unregister ubuntu2204_chipathon2023_gf180`
+
+
 # License
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
